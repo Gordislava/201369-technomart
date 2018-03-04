@@ -6,30 +6,22 @@
 </head>
 <body>
   <header class="main-header">
-    <nav class="logo-navigation">
-      <a href="index.html">
+      <a class="main-header-logo" href="index.html">
         <img src="#" alt="Техномарт">
       </a>
-    </nav>
     <div class="search">
       <button type="button" name="button-search">
         Поиск
       </button>
     </div>
     <div class="bookmarks">
-      <a href="bookmarks.html">
-        Закладки
-      </a>
+      <a href="bookmarks.html">Закладки</a>
     </div>
     <div class="cart">
-      <a href="cart.html">
-        Корзина
-      </a>
+      <a href="cart.html">Корзина</a>
     </div>
     <div class="order">
-      <a href="order-form.html">
-        Оформить заказ
-      </a>
+      <a class="order-bottom" href="order-form.html">Оформить заказ</a>
     </div>
     <article class="description">
       <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
@@ -68,10 +60,42 @@
       <ul>
         <li><a href="catalog.html">Каталог</a></li>
         <li><a href="tools.html">Инструмент</a></li>
-        <li><a href="perforators.html">Перфораторы</a></li>
+        <li class="breadcrumbs-current">Перфораторы</li>
       </ul>
     </nav>
     <h1>Перфораторы</h1>
+    <section class="filters">
+      <h2>Фильтр</h2>
+      <!--форма-->
+      <button type="button" name="button" class="filters-button">Покаать</button>
+    </section>
+    <div class="sorting">
+      <p>Сортировка</p>
+      <ul>
+        <li class="current-sorting">по цене</li>
+        <li>по типу</li>
+        <li>по функционалу</li>
+      </ul>
+    </div>
+    <section class="catalog">
+      <ul class="catalog-list">
+        <li class="catalog-item"></li>
+        <li class="catalog-item"></li>
+        <li class="catalog-item"></li>
+        <li class="catalog-item"></li>
+        <li class="catalog-item"></li>
+        <li class="catalog-item"></li>
+        <li class="catalog-item"></li>
+        <li class="catalog-item"></li>
+        <li class="catalog-item"></li>
+      </ul>
+      <ul class="pagination-list">
+        <li class="pagination-item">1</li>
+        <li class="pagination-item">2</li>
+        <li class="pagination-item">3</li>
+        <li class="pagination-item">Следующая</li>
+      </ul>
+    </section>
 
 
     <h2>Пара слов о перфораторах</h2>
