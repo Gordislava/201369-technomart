@@ -7,26 +7,27 @@
 </head>
 <body>
   <header class="main-header">
-      <a class="main-header-logo" href="index.html">
-        <img src="#" alt="Техномарт">
-      </a>
-    <div class="search">
-      <button type="button" name="button-search">
-        Поиск
-      </button>
-    </div>
-    <div class="bookmarks">
-      <a href="bookmarks.html">Закладки</a>
-    </div>
-    <div class="cart">
-      <a href="cart.html">Корзина</a>
-    </div>
-    <div class="order">
-      <a class="order-bottom" href="order-form.html">Оформить заказ</a>
-    </div>
-    <article class="description">
-      <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
-    </article>
+      <section class="header-top">
+          <a class="main-header-logo" href="index.html">
+          <img src="img/logo.jpg" width="220" height="47" alt="Техномарт">
+        </a>
+      <div class="search">
+        <button type="button" name="button-search">
+          Поиск
+        </button>
+      </div>
+      <div class="bookmarks">
+        <a href="bookmarks.html">Закладки</a>
+      </div>
+      <div class="cart">
+        <a href="cart.html">Корзина</a>
+      </div>
+      <div class="order">
+        <a class="order-bottom" href="order-form.html">Оформить заказ</a>
+      </div>
+  </section>
+  <section class="header-bottom">
+      <p class="description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
     <section class="contacts">
       <button type="button" name="phone" class="phone-number">
         +7(812)555-05-55
@@ -55,6 +56,7 @@
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
     </nav>
+    </section>
   </header>
   <main class="container">
     <nav class="breadcrumbs">
@@ -88,7 +90,7 @@
             </a>
           </h3>
           <P>
-            <img src="img/product-1.jpg" alt="Перфоратор BOSCH BFG 3000">
+            <img src="img/product-1.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
           </P>
           <p class="catalog-item-price">
             <b class="old-price">22500 Р</b>
@@ -103,7 +105,7 @@
           </a>
         </h3>
         <P>
-          <img src="img/product-2.jpg" alt="Перфоратор BOSCH BFG 6000">
+          <img src="img/product-2.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 6000">
         </P>
         <p class="catalog-item-price">
           <b class="old-price">30500 Р</b>
@@ -118,7 +120,7 @@
           </a>
         </h3>
         <P>
-          <img src="img/product-3.jpg" alt="Перфоратор BOSCH BFG 2000">
+          <img src="img/product-3.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
         </P>
         <p class="catalog-item-price">
           <b class="price">12500 Р</b>
@@ -132,7 +134,7 @@
             </a>
           </h3>
           <P>
-            <img src="img/product-1.jpg" alt="Перфоратор BOSCH BFG 3000">
+            <img src="img/product-1.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
           </P>
           <p class="catalog-item-price">
             <b class="old-price">22500 Р</b>
@@ -147,7 +149,7 @@
           </a>
         </h3>
         <P>
-          <img src="img/product-2.jpg" alt="Перфоратор BOSCH BFG 6000">
+          <img src="img/product-2.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 6000">
         </P>
         <p class="catalog-item-price">
           <b class="old-price">30500 Р</b>
@@ -162,7 +164,7 @@
           </a>
         </h3>
         <P>
-          <img src="img/product-3.jpg" alt="Перфоратор BOSCH BFG 2000">
+          <img src="img/product-3.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
         </P>
         <p class="catalog-item-price">
           <b class="price">12500 Р</b>
@@ -176,7 +178,7 @@
             </a>
           </h3>
           <P>
-            <img src="img/product-1.jpg" alt="Перфоратор BOSCH BFG 3000">
+            <img src="img/product-1.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
           </P>
           <p class="catalog-item-price">
             <b class="old-price">22500 Р</b>
@@ -191,7 +193,7 @@
           </a>
         </h3>
         <P>
-          <img src="img/product-2.jpg" alt="Перфоратор BOSCH BFG 6000">
+          <img src="img/product-2.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 6000">
         </P>
         <p class="catalog-item-price">
           <b class="old-price">30500 Р</b>
@@ -206,7 +208,7 @@
           </a>
         </h3>
         <P>
-          <img src="img/product-3.jpg" alt="Перфоратор BOSCH BFG 2000">
+          <img src="img/product-3.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
         </P>
         <p class="catalog-item-price">
           <b class="price">12500 Р</b>
@@ -226,49 +228,53 @@
   </article>
   </main>
   <footer class="main-footer">
-    <nav class="logo-navigation">
-      <a href="index.html">
-        <img src="#" alt="Техномарт">
-      </a>
-    </nav>
-    <nav class="footer-site-menu">
-      <ul>
-        <li><a href="about-us.html">Компания</a></li>
-        <li><a href="news.html">Новости</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="delivery.html">Доставка</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-      </ul>
-    </nav>
-    <nav class="footer-products-menu">
-      <ul>
-        <li><a href="materials.html">Материалы</a></li>
-        <li><a href="technics.html">Техника</a></li>
-        <li><a href="tools.html">Инструмент</a></li>
-        <li><a href="special-offers.html">Спецпредложения</a></li>
-      </ul>
-    </nav>
-    <p class="footer-contacts">
-      г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7(812)555-05-55
-    </p>
-    <p class="copyright-tehnomart">
-      <b>2010-2017 Компания "Техномарт" Все права защищены</b>
-    </p>
-    <div>
-      <ul>
-        <li><a class="social-button" href="#">Вконтакте</a></li>
-        <li><a class="social-button" href="#">Facebook</a></li>
-        <li><a class="social-button" href="#">Instagram</a></li>
-      </ul>
-    </div>
-    <p class="email">
-      <b>Обратная связь:</b>
-      <a class="email-adress" href="mail@htmlacademy.ru"></a>
-    </p>
-    <p class="htmlacademy-footer-copyright">
-      <b>Разработано:</b>
-      <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-    </p>
+    <section class="footer-top">
+      <nav class="footer-logo-navigation">
+        <a href="index.html">
+          <img src="img/logo.jpg"  width="220" height="68" alt="Техномарт">
+        </a>
+      </nav>
+      <nav class="footer-site-menu">
+        <ul>
+          <li><a href="about-us.html">Компания</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-products-menu">
+        <ul>
+          <li><a href="materials.html">Материалы</a></li>
+          <li><a href="technics.html">Техника</a></li>
+          <li><a href="tools.html">Инструмент</a></li>
+          <li><a href="special-offers.html">Спецпредложения</a></li>
+        </ul>
+      </nav>
+      <p class="footer-contacts">
+        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7(812)555-05-55
+      </p>
+    </section>
+    <section class="footer-bottom">
+      <p class="copyright-tehnomart">
+        <b>2010-2017 Компания "Техномарт" Все права защищены</b>
+      </p>
+      <div>
+        <ul>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Facebook</a></li>
+          <li><a class="social-button" href="#">Instagram</a></li>
+        </ul>
+      </div>
+      <p class="email">
+        <b>Обратная связь:</b>
+        <a class="email-adress" href="mail@htmlacademy.ru"></a>
+      </p>
+      <p class="htmlacademy-footer-copyright">
+        <b>Разработано:</b>
+        <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+      </p>
+    </section>
   </footer>
 
 </body>
