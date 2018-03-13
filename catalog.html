@@ -7,14 +7,15 @@
 </head>
 <body>
   <header class="main-header">
-      <section class="header-top">
+    <section class="header-top">
           <a class="main-header-logo" href="index.html">
-          <img src="img/logo.png" width="220" height="47" alt="Техномарт">
+          <img src="img/logo.png" width="220" height="47" alt="Логотип интернет-магазина Техномарт">
         </a>
       <div class="search">
-        <button type="button" name="button-search">
-          Поиск
-        </button>
+        <form class="search-form" action="https://echo.htmlacademy.ru">
+          <label for="search">Поиск:</label>
+          <input type="search" name="search">
+        </form>
       </div>
       <div class="bookmarks">
         <a href="bookmarks.html">Закладки</a>
@@ -34,13 +35,19 @@
         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
       </p>
     </section>
-      <button type="button" name="button" class="login">
-        Равшан Джамшутович
-      </button>
+    <div class="log-in">
+      <a href="profile.html">Равшан Джамшутович</a>
+      <!---иконка выхода:--->
+      <a href="logout.html">Выход</a>
       <ul>
         <li><a href="orders.html">Мои заказы</a></li>
         <li><a href="personal-page.html">Личный кабинет</a></li>
       </ul>
+    </div>
+    <div class="log-out">
+        <a class="login-link" href="login.html">Войти</a>
+        <a href="checkin.html">Регистрация</a>
+    </div>
     <nav class="main-menu">
       <ul>
         <li><a href="index.html">Главная</a></li>
@@ -66,18 +73,63 @@
     <div class="all-content">
       <section class="filters">
         <h2>Фильтр</h2>
-        <!--форма-->
-        <button type="button" name="button" class="filters-button">Покаать</button>
+        <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+         <fieldset>
+           <legend>Цена:</legend>
+           <input type="range" class="filter-price" name="price" min="0" max="30000"
+           id="filter-rice">
+           <input type="text" name="filter-price-min">
+           <input type="text" name="filter-price-max">
+         </fieldset>
+         <fieldset>
+           <legend>Производители:</legend>
+           <ul>
+             <li class="filter-mfr">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="bosch" id="filter-bosch" checked>
+              <label for="filter-bosch">Bosch</label>
+             </li>
+             <li class="filter-mfr">
+               <input class="visually-hidden filter-input-checkbox" type="checkbox" name="interscol" id="filter-interscol">
+               <label for="filter-interscol">Интерскол</label>
+             </li>
+             <li class="filter-mfr">
+               <input class="visually-hidden filter-input-checkbox" type="checkbox" name="makita" id="filter-makita" checked>
+               <label for="filter-makita">Makita</label>
+             </li>
+             <li class="filter-mfr">
+               <input class="visually-hidden filter-input-checkbox" type="checkbox" name="dewalt" id="filter-dewalt">
+               <label for="filter-dewalt">DeWalt</label>
+             </li>
+             <li class="filter-mfr">
+               <input class="visually-hidden filter-input-checkbox" type="checkbox" name="hitachi" id="filter-hitachi">
+               <label for="filter-hitachi">Hitachi</label>
+             </li>
+           </ul>
+         </fieldset>
+         <fieldset>
+           <legend>Питание:</legend>
+           <ul>
+             <li class="filter-option">
+               <input class="visually-hidden filter-input-radio" type="radio" name="charge" value="filter-cordless">
+               <label for="filter-cordless">Аккумуляторные</label>
+             <li class="filter-option">
+               <input class="visually-hidden filter-input-radio" type="radio" name="charge" value="filter-wired">
+               <label for="filter-wired">Сетевые</label>
+             </li>
+           </ul>
+         </fieldset>
+         <button type="submit" class="filters-button button">Показать</button>
+        </form>
       </section>
       <div class="main-content">
         <div class="sorting">
           <p>Сортировка</p>
           <ul>
-            <li class="current-sorting">по цене</li>
-            <li>по типу</li>
-            <li>по функционалу</li>
-            <li>по возрастанию</li>
-            <li>по убыванию</li>
+            <li class="current-sorting"><a href="price.html">по цене</a></li>
+            <li><a href="type.html">по типу</a></li>
+            <li><a href="functional.html">по функционалу</a></li>
+            <li class="visually-hidden"><a href="ascending.html">по возрастанию</a></li>
+            <li class="visually-hidden"><a href="descendingly.html">по убыванию</a></li>
           </ul>
         </div>
         <section class="catalog">
@@ -185,13 +237,13 @@
   <footer class="main-footer">
     <section class="footer-top">
         <a href="index.html">
-          <img src="img/logo-footer.png"  width="220" height="68" alt="Техномарт">
+          <img src="img/logo-footer.png"  width="220" height="68" alt="Логотип интернет-магазина Техномарт">
         </a>
       <nav class="footer-site-menu">
         <ul>
           <li><a href="about-us.html">Компания</a></li>
           <li><a href="news.html">Новости</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
+          <li><a>Каталог</a></li>
           <li><a href="delivery.html">Доставка</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
@@ -231,7 +283,7 @@
     <h2>Товар добавлен в корзину</h2>
     <a href="cart.html">Оформить заказ</a>
     <a href="catalog.html">Продолжить покупки</a>
-    <span class="modal-close">x</span>
+    <button type="button" class="modal-close">Закрыть</button>
   </section>
 </body>
 </html>
