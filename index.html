@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -12,9 +15,8 @@
             <img src="img/logo.png" width="220" height="47" alt="Логотип интернет-магазина Техномарт">
           </a>
         <div class="search">
-          <form class="search-form" action="https://echo.htmlacademy.ru">
-            <label for="search">Поиск:</label>
-            <input type="search" name="search">
+          <form action="https://echo.htmlacademy.ru">
+            <input class="search-form" type="search" name="search" placeholder="Поиск:">
           </form>
         </div>
         <div class="bookmarks">
@@ -35,19 +37,20 @@
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
         </p>
       </section>
+      <div class="log-out">
+        <a class="login-link" href="login.html">Войти</a>
+        <a class="checkin-link" href="checkin.html">Регистрация</a>
+      </div>
       <div class="log-in">
-        <a href="profile.html">Равшан Джамшутович</a>
+        <a class="name" href="profile.html">Равшан Джамшутович</a>
         <!---иконка выхода:--->
-        <a href="logout.html">Выход</a>
+        <a href="logout-icon.html">Выход</a>
         <ul>
           <li><a href="orders.html">Мои заказы</a></li>
           <li><a href="personal-page.html">Личный кабинет</a></li>
         </ul>
       </div>
-      <div class="log-out">
-        <a class="login-link" href="login.html">Войти</a>
-        <a class="checkin-link" href="checkin.html">Регистрация</a>
-      </div>
+
       <nav class="main-menu">
         <ul>
           <li><a>Главная</a></li>
@@ -79,7 +82,7 @@
         </div>
         <div class="second-row">
           <div class="color-menu">
-            <p>Скидка</p>
+            <p>Скидки 50%</p>
             <a href="discounts.html">На 350 товаров</a>
           </div>
           <div class="color-menu">
@@ -92,7 +95,7 @@
               <p>Соседям на радость!</p>
               <a href="сatalog.html" class="slider-button">Открыть каталог</a>
             </div>
-            <div class=" slide">
+            <div class="slide">
               <h2>Перфораторы</h2>
               <p>Настоящие мужские игрушки</p>
               <a href="сatalog.html" class="slider-button">Открыть каталог</a>
