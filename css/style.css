@@ -523,6 +523,12 @@ legend {
   line-height: 20px;
 }
 
+.filter-price-min,
+.filter-price-max {
+  background-color: #f7f3ec;
+  border: none;
+}
+
 .filter ul {
   list-style: none;
 }
