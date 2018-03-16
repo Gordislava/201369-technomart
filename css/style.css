@@ -1,0 +1,452 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-top,
+.footer-bottom {
+  font-size: 17px;
+  line-height: 18px;
+  background-color: #293449;
+}
+
+.header-top a,
+.main-menu ul a,
+.footer-bottom,
+.footer-bottom a {
+  color: #ffffff;
+}
+
+.header-top a:active {
+  color: rgba(255,255,255,0.4);
+}
+
+.header-top .bookmarks:hover,
+.header-top .cart:hover,
+.header-top .search-form:hover {
+  background-color: #212a3a;
+}
+.header-top .bookmarks:active,
+.header-top .cart:active, {
+  background-color: #161d29;
+}
+
+.header-top .search-form,
+.header-top .search-form:active{
+  background-color: #293449;
+  color: #ffffff;
+  border: none;
+}
+
+.header-top .search-form:focus {
+  background-color: #ffffff;
+  color: #000000;
+  outline: 0;
+}
+
+.header-top input::placeholder {
+  color: #ffffff;
+}
+
+input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+.header-top .order {
+  color: #ffffff;
+  background-color: #63a63e;
+}
+.header-top .order:hover {
+  background-color: #5fbb2d;
+}
+.header-top .order:active {
+  background-color: #518534;
+}
+
+.header-bottom {
+  background-color: #f3f7f8;
+}
+
+.header-bottom a {
+  color: #000000;
+}
+
+.header-bottom .description {
+  color: #ee3643;
+  text-align: left;
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+}
+
+.header-bottom .phone-number {
+  text-align: center;
+  font-size: 21px;
+  line-height: 21px;
+  color: #ee3643;
+  border: 2px solid #ffffff;
+}
+
+.header-bottom .header-adds {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.log-out a,
+.log-in a {
+  font-size: 21px;
+  line-height: 21px;
+  background-color: #ffffff;
+}
+
+.log-out a:hover,
+.log-in a:hover:not(.name) {
+  color: #ee3643;
+}
+
+.log-out a:active,
+.log-in a:active {
+  color: rgba(0,0,0, 0.4);
+}
+
+.log-in ul,
+.main-menu ul,
+.service-slider ul,
+.popular-mfr ul,
+.about-tehnomart ul,
+.footer-top ul,
+.footer-bottom ul {
+  list-style: none;
+}
+
+.log-in ul a {
+  color: #32425c;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.log-in li{
+  text-decoration: underline;
+}
+
+.main-menu {
+  font-size: 17px;
+  line-height: 17px;
+
+  background-color: #32425c;
+}
+.main-menu a:hover {
+  background-color: #293449;
+}
+.main-menu a:active {
+  background-color: #1d2739;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.color-menu p {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.color-menu:nth-child(1),
+.second-row .color-menu:nth-child(2) {
+  background-color: #ffbf47;
+}
+.color-menu:nth-child(2) {
+  background-color: #3bbce3;
+}
+.color-menu:nth-child(3) {
+  background-color: #dc91d8;
+}
+.second-row .color-menu:nth-child(1) {
+  background-color: #8ed78f;
+}
+
+.color-menu a {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+
+  background-color: #e5e5e5;
+}
+.color-menu a:hover {
+  background-color: #cccccc;
+}
+.color-menu a:active {
+  background-color: #b2b2b2;
+}
+
+.slider h2 {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.slider p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.slide a {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #ee3643;
+}
+
+.slide a:hover {
+  background-color: #ca2c37;
+}
+
+.slide a:active {
+  background-color: #ba2732;
+}
+
+.slide:first-child {
+  background-image: url("../img/slider-2.jpg");
+  background-repeat: no-repeat;
+}
+.slide:nth-child(2) {
+  background-image: url("../img/slider-1.jpg");
+  background-repeat: no-repeat;
+}
+
+.popular-items h2,
+.popular-mfr h2,
+.service h2,
+.tehnomart-text-contacts h2,
+.modal-cart h2 {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+
+  background-color: #f9f5f0;
+
+  margin:0;
+}
+
+.header-popular-items a,
+.header-mfr a,
+.item-button button,
+.service-list-text .credit-button,
+.modal-cart a {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #ee3643;
+}
+
+.catalog-item h3 {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.catalog-item span,
+.catalog-item a {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: :18px;
+  font-weight: 700;
+
+  color: #a9a9a9;
+  text-decoration: line-through;
+}
+
+.catalog-item a,
+.about-tehnomart a,
+.map a {
+  color: #ffffff;
+  background-color: #ee3643;
+  text-decoration: none;
+}
+
+.item-button button:first-child {
+  background-color: #63a63e;
+  border-color: #63a63e;
+  border-bottom: 2px solid #367315;
+  border-right-style: none;
+}
+.item-button button:first-child:hover {
+  background-color: #5fbb2d;
+  border-color: #5fbb2d;
+  border-bottom: 2px solid #367315;
+}
+/*переопределить стандартные тени при клике*/
+.item-button button:first-child:active {
+  background-color: #518534;
+  border-color: #518534;
+}
+
+.item-button button:last-child {
+  color: #32425c;
+
+  background-color: inherit;
+  border: 2px solid #63a63e;
+}
+.item-button button:last-child:hover {
+  border-color: #32425c;
+}
+.item-button button:last-child:active {
+  border-color: rgba(50, 66, 92, 0.7);
+  color: rgba(50, 66, 92, 0.7);
+}
+
+.popular-mfr a:active {
+  opacity: 0.3;
+}
+
+.service {
+  background-color: #f4f8fa;
+}
+.service h2 {
+  color: #000000;
+  background-color: inherit;
+}
+.service p,
+.about-tehnomart p,
+.map p {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.service-list-text h2 {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #32425c;
+}
+
+.service-list button {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 30px;
+  color: #ffffff;
+  border-style: none;
+  background-color: #32425c;
+
+}
+.service-list button:hover {
+  background-color: #293449;
+}
+.service-list .current-item button {
+  background-color: #ffffff;
+  color: #32425c;
+}
+
+.service-list-text .credit-button {
+  background-color: #ff5357;
+  border: none;
+}
+
+.tehnomart-text-contacts h2 {
+  color: inherit;
+  background-color: inherit;
+}
+.about-tehnomart li {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.footer-top {
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+
+  background-color: #32425c;
+}
+
+.footer-site-menu a,
+.footer-products-menu a,
+.footer-top p {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.footer-products-menu a,
+.htmlacademy-footer-copyright a,
+.email a {
+  color: #ffd180;
+}
+
+.footer-site-menu a:hover,
+.footer-products-menu a:hover,
+.email a:hover,
+.htmlacademy-footer-copyright a:hover {
+  text-decoration: underline;
+}
+.footer-site-menu a:active,
+.footer-products-menu a:active {
+  opacity: 0.5;
+}
+.email a:active,
+.htmlacademy-footer-copyright a:active {
+  color: #ee3643;
+}
+
+.footer-bottom b {
+  font-weight: 400;
+}
+
+.modal-write label {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.modal-write input::placeholder,
+.modal-write textarea::placeholder {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 18px;
+  color: #a9a9a9;
+}
+.modal-write-form button {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #ee3643;
+
+  border-style: none;
+}
+.modal-cart h2 {
+  color: inherit;
+  background-color: inherit;
+}
+.modal-cart a:nth-of-type(2) {
+  color: inherit;
+  background-color: inherit;
+}
+.modal-cart-bottom {
+  background-color: #f1f1f1;
+}
