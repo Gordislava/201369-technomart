@@ -14,6 +14,17 @@ a {
   text-decoration: none;
 }
 
+/*
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  font-size: 0;
+}
+*/
+
 .header-top,
 .footer-bottom {
   font-size: 17px;
@@ -474,6 +485,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 .inner-page h2, {
+  background-color: #f7f3ec;
+}
+
+.sorting,
+.filters h2 {
   background-color: #f7f3ec;
 }
 
