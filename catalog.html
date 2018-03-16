@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Каталог интернет-магазина "Техномарт"</title>
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="main-header">
@@ -12,9 +15,8 @@
           <img src="img/logo.png" width="220" height="47" alt="Логотип интернет-магазина Техномарт">
         </a>
       <div class="search">
-        <form class="search-form" action="https://echo.htmlacademy.ru">
-          <label for="search">Поиск:</label>
-          <input type="search" name="search">
+        <form action="https://echo.htmlacademy.ru">
+          <input class="search-form" type="search" name="search" placeholder="Поиск:">
         </form>
       </div>
       <div class="bookmarks">
@@ -28,7 +30,7 @@
       </div>
   </section>
   <section class="header-bottom">
-      <p class="description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+    <p class="description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
     <section class="contacts">
       <a href="tel:+78125550555" class="phone-number">+7 (812) 555-05-55</a>
       <p class="header-adds">
@@ -36,7 +38,7 @@
       </p>
     </section>
     <div class="log-in">
-      <a href="profile.html">Равшан Джамшутович</a>
+      <a class="name" href="profile.html">Равшан Джамшутович</a>
       <!---иконка выхода:--->
       <a href="logout.html">Выход</a>
       <ul>
@@ -46,7 +48,7 @@
     </div>
     <div class="log-out">
         <a class="login-link" href="login.html">Войти</a>
-        <a href="checkin.html">Регистрация</a>
+        <a class="checkin-link" href="checkin.html">Регистрация</a>
     </div>
     <nav class="main-menu">
       <ul>
@@ -61,7 +63,7 @@
     </nav>
     </section>
   </header>
-  <main class="container">
+  <main class="container inner-page">
     <nav class="breadcrumbs">
       <ul>
         <li><a href="catalog.html">Каталог</a></li>
@@ -77,9 +79,9 @@
          <fieldset>
            <legend>Цена:</legend>
            <input type="range" class="filter-price" name="price" min="0" max="30000"
-           id="filter-rice">
-           <input type="text" name="filter-price-min">
-           <input type="text" name="filter-price-max">
+           id="filter-price">
+           <input type="text" name="filter-price-min" class="filter-price-min">
+           <input type="text" name="filter-price-max" class="filter-price-max">
          </fieldset>
          <fieldset>
            <legend>Производители:</legend>
@@ -271,7 +273,7 @@
         </ul>
       <div class="email">
         <b>Обратная связь:</b>
-        <a class="email-adress" href="mail@htmlacademy.ru"></a>
+        <a class="email-adress" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
       </div>
       <div class="htmlacademy-footer-copyright">
         <b>Разработано:</b>
@@ -279,10 +281,13 @@
       </div>
     </section>
   </footer>
+
   <section class="modal modal-cart">
     <h2>Товар добавлен в корзину</h2>
-    <a href="cart.html">Оформить заказ</a>
-    <a href="catalog.html">Продолжить покупки</a>
+    <div class="modal-cart-bottom">
+      <a href="cart.html">Оформить заказ</a>
+      <a href="catalog.html">Продолжить покупки</a>
+    </div>
     <button type="button" class="modal-close">Закрыть</button>
   </section>
 </body>

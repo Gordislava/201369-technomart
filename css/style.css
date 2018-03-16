@@ -198,7 +198,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   line-height: 36px;
   font-weight: 700;
   color: #ffffff;
-  margin: 0;
 }
 
 .slider p {
@@ -236,15 +235,18 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .popular-mfr h2,
 .service h2,
 .tehnomart-text-contacts h2,
-.modal-cart h2 {
+.modal-cart h2,
+.inner-page h1 {
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
 
   background-color: #f9f5f0;
+}
 
-  margin:0;
+.inner-page h1 {
+  background-color: #f1f1f1;
 }
 
 .header-popular-items a,
@@ -287,19 +289,18 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .item-button button:first-child {
   background-color: #63a63e;
-  border-color: #63a63e;
+  border: 2px solid #63a63e;
   border-bottom: 2px solid #367315;
-  border-right-style: none;
 }
 .item-button button:first-child:hover {
   background-color: #5fbb2d;
-  border-color: #5fbb2d;
+  border: 2px solid #5fbb2d;
   border-bottom: 2px solid #367315;
 }
-/*переопределить стандартные тени при клике*/
+
 .item-button button:first-child:active {
   background-color: #518534;
-  border-color: #518534;
+  border: 2px solid #518534;
 }
 
 .item-button button:last-child {
@@ -417,6 +418,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   font-weight: 400;
 }
 
+/*основные стили модальных окон*/
 .modal-write label {
   font-size: 18px;
   line-height: 18px;
@@ -449,4 +451,111 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 .modal-cart-bottom {
   background-color: #f1f1f1;
+}
+
+/*основные стили каталога*/
+.breadcrumbs a,
+.breadcrumbs .breadcrumbs-current,
+.inner-page h2,
+.inner-page .sorting,
+.inner-page button,
+.pagination-list a  {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.breadcrumbs ul,
+.sorting ul,
+.pagination-list {
+  list-style: none;
+}
+
+.inner-page h2, {
+  background-color: #f7f3ec;
+}
+
+.sorting a{
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 2px dotted #ee3643;
+}
+.sorting a:hover {
+  color: inherit;
+  border-bottom: 2px solid #ee3643;
+}
+.sorting a:active {
+  border-style: none;
+  color: #ee3643;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+legend {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.filter label {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.filter ul {
+  list-style: none;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+  color: #000000;
+}
+
+/*подпись не меняет цвет при disabled - разобраться*/
+.filter-input:disabled + label {
+  color: #000000;
+  opacity: 0.7;
+}
+
+.inner-page button {
+  border: none;
+  border: 1px solid #000000;
+  background-color: inherit;
+}
+
+.pagination-item a {
+  border: 1px solid #e5e5e5;
+}
+
+.pagination-item a:hover {
+  border: 1px solid #bdc6ca;
+}
+.pagination-list a:active {
+  border: 1px solid #ee3643;
+}
+.current-pagination a,
+.current-pagination a:hover,
+.current-pagination a:active {
+  color: #ffffff;
+  background-color: #ee3643;
+  border-color: #ee3643;
+}
+
+.about-item {
+  background-color: #f2f6f8;
+}
+.about-item h2 {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.about-item p {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
 }
