@@ -46,7 +46,7 @@
         <li><a href="personal-page.html">Личный кабинет</a></li>
       </ul>
     </div>
-    
+
     <!-- если не авторизован:
     <div class="log-out">
         <a class="login-link" href="login.html">Войти</a>
@@ -82,8 +82,12 @@
         <form class="filter" action="https://echo.htmlacademy.ru" method="get">
          <fieldset>
            <legend>Цена:</legend>
-           <input type="range" class="filter-price" name="price" min="0" max="30000"
-           id="filter-price">
+
+           <div class="price-form">
+             <div class="range"></div>
+             <div class="circle-min"></div>
+             <div class="circle-max"></div>
+           </div>
            <input type="text" name="filter-price-min" class="filter-price-min">
            <input type="text" name="filter-price-max" class="filter-price-max">
          </fieldset>

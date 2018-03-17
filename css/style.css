@@ -523,6 +523,29 @@ legend {
   line-height: 20px;
 }
 
+.price-form {
+  height: 80px;
+  width: 220px;
+  background-color: #f7f3ec;
+}
+
+.range {
+  height: 2px;
+  width: 140px;
+  background-color: #d7dcde;
+  position: relative;
+  top: 50%;
+  left: 30px;
+}
+.range::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 120px;
+  background-color: #00ca74;
+
+}
+
 .filter-price-min,
 .filter-price-max {
   background-color: #f7f3ec;
