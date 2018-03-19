@@ -158,6 +158,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .main-menu {
   font-size: 17px;
   line-height: 17px;
+  border-bottom: 5px solid #293449;
 
   background-color: #32425c;
 }
@@ -195,13 +196,13 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   font-size: 14px;
   line-height: 18px;
 
-  background-color: #e5e5e5;
+  background-color: rgba(0,0,0,0.1);
 }
 .color-menu a:hover {
-  background-color: #cccccc;
+  background-color: rgba(0,0,0,0.2);
 }
 .color-menu a:active {
-  background-color: #b2b2b2;
+  background-color: rgba(0,0,0,0.3);
 }
 
 .slider h2 {
@@ -252,6 +253,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
+  text-transform: uppercase;
 
   background-color: #f9f5f0;
 }
@@ -268,6 +270,9 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
+  text-transform: uppercase;
+
+  text-align: center;
 
   background-color: #ee3643;
 }
@@ -466,7 +471,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 /*основные стили каталога*/
 .breadcrumbs a,
-.breadcrumbs .breadcrumbs-current,
 .inner-page h2,
 .inner-page .sorting,
 .inner-page button,
@@ -603,4 +607,244 @@ legend {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
+}
+
+/*сетка*/
+
+.main-header {
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+
+
+  /*временно*/
+  min-height: 320px;
+
+}
+
+.header-top {
+  width: 100%;
+
+  /* временно*/
+  min-height: 42px;
+  display: flex;
+}
+
+.header-top-wrapper {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-header-logo {
+
+/*временно, без учета выступающей полоски, полоска +5px*/
+  height: 42px;
+  width: 220px;
+  margin: 0;
+  padding: 0;
+}
+
+.search {
+  width: 270px;
+
+}
+.bookmarks {
+  width: 140px;
+  text-align: center;
+}
+.cart {
+  width: 140px;
+  text-align: center;
+}
+.order {
+  width: 150px;
+  text-align: center;
+}
+
+
+.header-bottom-wrapper {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 5px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.description {
+  width: 200px;
+  margin-top: 45px;
+}
+
+.contacts {
+  width: 300px;
+  margin-top: 45px;
+
+}
+
+.contacts a {
+  display: block;
+  height: 45px;
+  width: 270px;
+}
+
+/*проба задать размеры и паддинги*/
+
+.login-link {
+  width: 121px;
+  /*padding: 14px 25px;*/
+  text-align: center;
+
+}
+
+.checkin-link {
+  /*display: inline-block;
+  box-sizing: border-box;*/
+  width: 150px;
+  margin-left: 5px;
+  /*padding: 14px 25px;*/
+
+}
+
+.log-out {
+  width: 262px;
+  margin-top: 45px;
+}
+
+
+
+.main-menu ul {
+  /*временно*/
+  min-height: 60px;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.main-menu li{
+  /*временно*/
+  min-height: 60px;
+
+  width: 130px;
+  text-align: center;
+
+}
+
+.main-menu {
+  width: 940px;
+}
+
+.header-bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*временно*/
+  min-height: 280px;
+}
+
+ /*здесь пять метров пустоты, дальше - популярные товары*/
+
+ .header-popular-items {
+   /*временно*/
+   min-height: 89px;
+   width: 940px;
+   margin: 0 auto;
+   background-color: #f9f5f0;
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 22px;
+
+ }
+
+ .header-popular-items a {
+   display: block;
+   min-height: 38px;
+   width: 253px;
+   margin-bottom: 45px;
+ }
+
+ .header-mfr {
+   min-height: 89px;
+   width: 940px;
+   margin: 0 auto;
+   background-color: #f9f5f0;
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 20px;
+ }
+
+ .header-mfr a {
+   display: block;
+   min-height: 38px;
+   width: 253px;
+   margin-bottom: 45px;
+ }
+
+ .popular-list {
+   display: flex;
+   justify-content: space-between;
+   width: 940px;
+   margin: 0 auto;
+ }
+
+ .catalog-item {
+   width: 220px;
+   min-height: 316px;
+   margin-bottom: 22px;
+ }
+
+ .mfr-list {
+   width: 940px;
+   margin: 0 auto;
+   display: flex;
+   flex-wrap: wrap;
+   padding: 0;
+ }
+
+ .mfr-list li {
+   width: 220px;
+   min-height: 145px;
+   margin-bottom: 20px;
+   margin-right: 20px;
+ }
+
+ .mfr-list li:nth-child(4n) {
+   margin-right: 0;
+ }
+
+/*пять метров пустоты, а потом сетка каталога*/
+
+.breadcrumbs ul {
+  width: 380px;
+  min-height: 40px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs li {
+  width: 100px;
+  min-height: 15px;
+  padding: 0;
+
+  margin-right: 10px;
+}
+
+.perforator-wrapper {
+  width: 940px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+h1 {
+  width: 940px;
+  align-self: center;
 }
