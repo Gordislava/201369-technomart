@@ -10,7 +10,7 @@
 </head>
 <body>
   <header class="main-header">
-    <section class="header-top">
+    <div class="header-top">
           <a class="main-header-logo" href="index.html">
           <img src="img/logo.png" width="220" height="47" alt="Логотип интернет-магазина Техномарт">
         </a>
@@ -26,19 +26,19 @@
         <a href="cart.html">Корзина</a>
       </div>
       <div class="order">
-        <a class="order-bottom" href="order-form.html">Оформить заказ</a>
+        <a class="order-link" href="order-form.html">Оформить заказ</a>
       </div>
-  </section>
-  <section class="header-bottom">
+  </div>
+  <div class="header-bottom">
     <p class="description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-    <section class="contacts">
+    <div class="contacts">
       <a href="tel:+78125550555" class="phone-number">+7 (812) 555-05-55</a>
-      <p class="header-adds">
+      <p class="header-address">
         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
       </p>
-    </section>
+    </div>
     <div class="log-in">
-      <a class="name" href="profile.html">Равшан Джамшутович</a>
+      <a class="name-link" href="profile.html">Равшан Джамшутович</a>
       <!---иконка выхода:--->
       <a href="logout.html" class="visually-hidden">Выход</a>
       <ul>
@@ -65,7 +65,7 @@
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
     </nav>
-    </section>
+  </div>
   </header>
   <main class="container inner-page">
     <nav class="breadcrumbs">
@@ -79,7 +79,7 @@
       <h1>Перфораторы</h1>
     </div>
     <div class="all-content">
-      <section class="filters">
+      <section class="filters-section">
         <h2>Фильтр</h2>
         <form class="filter" action="https://echo.htmlacademy.ru" method="get">
          <fieldset>
@@ -95,23 +95,23 @@
          <fieldset>
            <legend>Производители:</legend>
            <ul>
-             <li class="filter-mfr">
+             <li class="filter-manufacturer">
               <input class="visually-hidden filter-input-checkbox" type="checkbox" name="bosch" id="filter-bosch" checked>
               <label for="filter-bosch">Bosch</label>
              </li>
-             <li class="filter-mfr">
+             <li class="filter-manufacturer">
                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="interscol" id="filter-interscol">
                <label for="filter-interscol">Интерскол</label>
              </li>
-             <li class="filter-mfr">
+             <li class="filter-manufacturer">
                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="makita" id="filter-makita" checked>
                <label for="filter-makita">Makita</label>
              </li>
-             <li class="filter-mfr">
+             <li class="filter-manufacturer">
                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="dewalt" id="filter-dewalt">
                <label for="filter-dewalt">DeWalt</label>
              </li>
-             <li class="filter-mfr">
+             <li class="filter-manufacturer">
                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="hitachi" id="filter-hitachi">
                <label for="filter-hitachi">Hitachi</label>
              </li>
@@ -143,7 +143,7 @@
             <li class="visually-hidden"><a href="#">по убыванию</a></li>
           </ul>
         </div>
-        <section class="catalog">
+        <section class="catalog-section">
             <article class="catalog-item">
               <h3>Перфоратор BOSCH BFG 3000</h3>
                 <img src="img/product-1.jpg" width="220" height="150" alt="Перфоратор BOSCH BFG 3000">
@@ -246,7 +246,7 @@
   </article>
   </main>
   <footer class="main-footer">
-    <section class="footer-top">
+    <div class="footer-top">
         <a href="index.html">
           <img src="img/logo-footer.png"  width="220" height="68" alt="Логотип интернет-магазина Техномарт">
         </a>
@@ -270,8 +270,8 @@
       <p class="footer-contacts">
         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7(812)555-05-55
       </p>
-    </section>
-    <section class="footer-bottom">
+    </div>
+    <div class="footer-bottom">
       <p class="copyright-tehnomart">
         <b>2010-2017 Компания "Техномарт" Все права защищены</b>
       </p>
@@ -282,13 +282,13 @@
         </ul>
       <div class="email">
         <b>Обратная связь:</b>
-        <a class="email-adress" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <a class="email-address" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
       </div>
       <div class="htmlacademy-footer-copyright">
         <b>Разработано:</b>
         <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
       </div>
-    </section>
+    </div>
   </footer>
 
   <section class="modal modal-cart">

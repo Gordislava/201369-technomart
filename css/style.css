@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -70,12 +70,12 @@ a {
   color: #ffffff;
 }
 
-input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+/*input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
 input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration { display: none; }
+input[type="search"]::-webkit-search-results-decoration { display: none; }*/
 
 .header-top .order {
   color: #ffffff;
@@ -112,7 +112,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   border: 2px solid #ffffff;
 }
 
-.header-bottom .header-adds {
+.header-bottom .header-address {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
@@ -126,7 +126,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 .log-out a:hover,
-.log-in a:hover:not(.name) {
+.log-in a:hover:not(.name-link) {
   color: #ee3643;
 }
 
@@ -138,7 +138,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .log-in ul,
 .main-menu ul,
 .service-slider ul,
-.popular-mfr ul,
+.popular-manufacturer ul,
 .about-tehnomart ul,
 .footer-top ul,
 .footer-bottom ul {
@@ -244,8 +244,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 .popular-items h2,
-.popular-mfr h2,
-.service h2,
+.popular-manufacturer h2,
+.service-section h2,
 .tehnomart-text-contacts h2,
 .modal-cart h2,
 .inner-page h1 {
@@ -263,10 +263,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 .header-popular-items a,
-.header-mfr a,
+.header-manufacturer a,
 .item-button button,
-.service-list-text .credit-button,
+.content-credit-button,
 .modal-cart a {
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
@@ -278,7 +279,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 .catalog-item h3 {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -286,7 +287,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .catalog-item span,
 .catalog-item a {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: :18px;
   font-weight: 700;
@@ -303,10 +304,14 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   text-decoration: none;
 }
 
+
+
 .item-button button:first-child {
   background-color: #63a63e;
   border: 2px solid #63a63e;
   border-bottom: 2px solid #367315;
+  color: #ffffff;
+
 }
 .item-button button:first-child:hover {
   background-color: #5fbb2d;
@@ -333,21 +338,21 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   color: rgba(50, 66, 92, 0.7);
 }
 
-.popular-mfr a:active {
+.popular-manufacturer a:active {
   opacity: 0.3;
 }
 
-.service {
+.service-section {
   background-color: #f4f8fa;
 }
-.service h2 {
+.service-section h2 {
   color: #000000;
   background-color: inherit;
 }
-.service p,
+.service-section p,
 .about-tehnomart p,
 .map p {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
@@ -377,7 +382,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   color: #32425c;
 }
 
-.service-list-text .credit-button {
+.content-credit-button {
   background-color: #ff5357;
   border: none;
 }
@@ -387,7 +392,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   background-color: inherit;
 }
 .about-tehnomart li {
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 20px;
@@ -443,7 +448,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .modal-write input::placeholder,
 .modal-write textarea::placeholder {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   font-weight: 18px;
   color: #a9a9a9;
@@ -473,9 +478,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .breadcrumbs a,
 .inner-page h2,
 .inner-page .sorting,
-.inner-page button,
 .pagination-list a  {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
@@ -488,16 +492,16 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   list-style: none;
 }
 
-.inner-page h2, {
+.inner-page h2 {
   background-color: #f7f3ec;
 }
 
 .sorting,
-.filters h2 {
+.filters-section h2 {
   background-color: #f7f3ec;
 }
 
-.sorting a{
+.sorting a {
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 2px dotted #ee3643;
 }
@@ -691,11 +695,8 @@ legend {
   width: 270px;
 }
 
-/*проба задать размеры и паддинги*/
-
 .login-link {
   width: 121px;
-  /*padding: 14px 25px;*/
   text-align: center;
 
 }
@@ -769,7 +770,7 @@ legend {
    margin-bottom: 45px;
  }
 
- .header-mfr {
+ .header-manufacturer {
    min-height: 89px;
    width: 940px;
    margin: 0 auto;
@@ -779,7 +780,7 @@ legend {
    margin-bottom: 20px;
  }
 
- .header-mfr a {
+ .header-manufacturer a {
    display: block;
    min-height: 38px;
    width: 253px;
@@ -799,7 +800,7 @@ legend {
    margin-bottom: 22px;
  }
 
- .mfr-list {
+ .manufacturer-list {
    width: 940px;
    margin: 0 auto;
    display: flex;
@@ -807,14 +808,14 @@ legend {
    padding: 0;
  }
 
- .mfr-list li {
+ .manufacturer-list li {
    width: 220px;
    min-height: 145px;
    margin-bottom: 20px;
    margin-right: 20px;
  }
 
- .mfr-list li:nth-child(4n) {
+ .manufacturer-list li:nth-child(4n) {
    margin-right: 0;
  }
 
@@ -846,5 +847,6 @@ legend {
 
 h1 {
   width: 940px;
+  min-height: 89px;
   align-self: center;
 }
