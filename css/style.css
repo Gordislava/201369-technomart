@@ -660,7 +660,7 @@ html { box-sizing: border-box;
   line-height: 20px;
 }
 
-/*фильтр по цене1*/
+/*фильтр по цене*/
 .price-form {
   height: 80px;
   width: 220px;
@@ -785,6 +785,10 @@ html { box-sizing: border-box;
   line-height: 24px;
 }
 
+
+
+
+
 /*сетка*/
 
 .main-header {
@@ -809,7 +813,7 @@ html { box-sizing: border-box;
 .header-top-wrapper {
   width: 940px;
   margin: 0 auto;
-  padding: 0 5px;
+  padding: 0 10px;
   display: flex;
   justify-content: space-between;
 }
@@ -839,25 +843,29 @@ html { box-sizing: border-box;
   text-align: center;
 }
 
+.header-bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*временно*/
+  min-height: 280px;
+}
+
 
 .header-bottom-wrapper {
   width: 940px;
   margin: 0 auto;
-  padding: 0 5px;
+  padding: 0 10px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 
 }
 
 .description {
   width: 200px;
   margin-top: 45px;
-}
-
-.contacts {
-  width: 300px;
-  margin-top: 45px;
-
+  margin-left: 45px;
 }
 
 .contacts a {
@@ -866,27 +874,29 @@ html { box-sizing: border-box;
   width: 270px;
 }
 
+.contacts {
+  width: 300px;
+  margin-top: 45px;
+  margin-left: 68px;
+}
+
 .login-link {
   width: 121px;
   text-align: center;
+  margin-left: 68px;
 
 }
 
 .checkin-link {
-  /*display: inline-block;
-  box-sizing: border-box;*/
   width: 150px;
   margin-left: 5px;
-  /*padding: 14px 25px;*/
-
 }
 
 .log-out {
   width: 262px;
   margin-top: 45px;
+  margin-left: auto;
 }
-
-
 
 .main-menu ul {
   /*временно*/
@@ -896,13 +906,12 @@ html { box-sizing: border-box;
   padding: 0;
   list-style: none;
   display: flex;
+  justify-content: space-around;
 }
 
 .main-menu li{
   /*временно*/
   min-height: 60px;
-
-  width: 130px;
   text-align: center;
 
 }
@@ -911,14 +920,7 @@ html { box-sizing: border-box;
   width: 940px;
 }
 
-.header-bottom {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /*временно*/
-  min-height: 280px;
-}
+
 
  /*здесь пять метров пустоты, дальше - популярные товары*/
 
@@ -989,6 +991,124 @@ html { box-sizing: border-box;
  .manufacturer-list li:nth-child(4n) {
    margin-right: 0;
  }
+
+
+
+/*футер*/
+.footer-top {
+  width: 100%;
+  min-height: 193px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-top-container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+  min-height: 85px;
+  display: flex;
+}
+
+.footer-middle-container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+  min-height: 85px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.footer-top-container a:first-child {
+  display: block;
+  margin-right: auto;
+}
+
+
+.footer-site-menu ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 80px;
+  width: 560px;
+  margin-left: auto;
+  justify-content: space-between;
+
+}
+
+.footer-site-menu li {
+  min-height: 80px;
+  text-align: center;
+}
+
+
+.footer-products-menu ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 80px;
+  width: 540px;
+  justify-content: space-between;
+}
+
+.footer-products-menu li {
+  min-height: 80px;
+  text-align: center;
+}
+
+.footer-contacts {
+  width: 380px;
+  min-height: 65px;
+}
+
+/*нижняя часть футера*/
+.footer-bottom {
+  width: 100%;
+  min-height: 107px;
+  display: flex;
+  padding: 30px 0;
+}
+
+.copyright-tehnomart {
+  margin: 0;
+  min-height: 60px;
+  width: 240px;
+  margin-right: 150px;
+}
+
+.footer-bottom ul {
+  margin: 0;
+  padding: 0;
+  min-height: 60px;
+  width: 150px;
+}
+
+.email {
+  margin: 0;
+
+  min-height: 60px;
+  width: 140px;
+  margin-left: auto;
+  margin-right: 35px;
+}
+
+.htmlacademy-footer-copyright {
+  margin: 0;
+  min-height: 60px;
+  width: 120px;
+
+}
+
+.footer-bottom-wrapper {
+
+  width: 940px;
+  padding: 0 10px;
+  margin: 0 auto;
+  display: flex;
+}
+
 
 /*пять метров пустоты, а потом сетка каталога*/
 
