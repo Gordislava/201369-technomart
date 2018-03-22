@@ -406,6 +406,26 @@ html { box-sizing: border-box;
   list-style: none;
 }
 
+/*
+.service-list-text li:first-child {
+  background-image: url("../img/car-icon.png");
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+ временно
+.service-list-text li:nth-child(2) {
+  background-image: url("../img/guarantee.png");
+  background-repeat: no-repeat;
+  background-position: center right;
+}*/
+
+.service-list-text li:last-child {
+  background-image: url("../img/credit.png");
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
 .service-list button {
   font-weight: 700;
   font-size: 21px;
@@ -921,8 +941,71 @@ html { box-sizing: border-box;
 }
 
 
+/*промо-меню*/
 
- /*здесь пять метров пустоты, дальше - популярные товары*/
+.promo-menu {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.promo-menu .first-row {
+  min-height: 125px;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.color-menu {
+  width: 300px;
+}
+
+.first-row .color-menu:first-child {
+  margin: 0;
+  margin-right: 20px;
+}
+
+.first-row .color-menu:last-child {
+  margin: 0;
+  margin-left: auto;
+}
+
+.promo-menu .second-row {
+  min-height: 270px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-bottom: 53px;
+  align-items: flex-start;
+}
+
+.slide {
+  margin: 0;
+  margin-right: 20px;
+  padding: 0;
+  width: 620px;
+  min-height: 300px;
+  order: 3;
+}
+
+.slide h2 {
+  margin-top: 0;
+}
+
+.second-row .color-menu:first-child {
+  order: 1;
+  min-height: 125px;
+  margin-bottom: 20px;
+}
+
+.second-row .color-menu:nth-child(2) {
+  order: 2;
+  min-height: 125px;
+  margin: 0;
+}
+
+ .popular-items {
+   margin-bottom: 20px;
+ }
 
  .header-popular-items {
    /*временно*/
@@ -932,7 +1015,7 @@ html { box-sizing: border-box;
    background-color: #f9f5f0;
    display: flex;
    justify-content: space-between;
-   margin-bottom: 22px;
+   margin-bottom: 20px;
 
  }
 
@@ -992,7 +1075,75 @@ html { box-sizing: border-box;
    margin-right: 0;
  }
 
+/*сервисы*/
+.service-section-wrapper {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+  padding-top: 50px;
+}
 
+.service-section p {
+  width: 400px;
+  margin-bottom: 60px;
+}
+
+.service-slider {
+  min-height: 340px;
+  display: flex;
+}
+
+.service-slider .service-list {
+  width: 240px;
+  padding: 0;
+  margin: 0;
+  margin-right: 80px;
+}
+
+.service-list-text {
+  width: 620px;
+  padding: 0;
+  margin: 0;
+}
+
+.service-list-text li {
+  min-height: 300px;
+  width: 620px;
+}
+
+.service-list-text h2 {
+  margin-top: 0;
+}
+
+.service-list-text p {
+  width: 300px;
+}
+
+.tehnomart-text-contacts {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+  padding-top: 50px;
+  display: flex;
+}
+
+.about-tehnomart {
+  min-height: 390px;
+  width: 540px;
+  margin: 0;
+  margin-right: 100px;
+  padding: 0
+
+}
+
+.map {
+  min-height: 390px;
+  width: 300px;
+  margin: 0;
+  margin-left: auto:
+  padding: 0;
+
+}
 
 /*футер*/
 .footer-top {
@@ -1061,6 +1212,7 @@ html { box-sizing: border-box;
 .footer-contacts {
   width: 380px;
   min-height: 65px;
+  margin-right: auto;
 }
 
 /*нижняя часть футера*/
