@@ -1190,7 +1190,6 @@ html { box-sizing: border-box;
   text-align: center;
 }
 
-
 .footer-products-menu ul {
   margin: 0;
   padding: 0;
@@ -1261,6 +1260,19 @@ html { box-sizing: border-box;
 
 /*пять метров пустоты, а потом сетка каталога*/
 
+.inner-page {
+  width: 940px;
+  margin: 0 auto;
+  min-height: 1630px
+}
+
+.breadcrumbs {
+  width: 940px;
+  min-height: 60px;
+  display: flex;
+  margin: 0 auto;
+  padding: 0 10;
+}
 .breadcrumbs ul {
   width: 380px;
   min-height: 40px;
@@ -1270,11 +1282,9 @@ html { box-sizing: border-box;
 }
 
 .breadcrumbs li {
-  width: 100px;
-  min-height: 15px;
   padding: 0;
-
-  margin-right: 10px;
+  margin: 0;
+  margin-left: 20px;
 }
 
 .perforator-wrapper {
@@ -1289,4 +1299,40 @@ h1 {
   width: 940px;
   min-height: 89px;
   align-self: center;
+}
+
+.sorting {
+  width: 700px;
+  min-height: 38px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.sorting ul {
+  width: 460px;
+  display: flex;
+  margin-left: auto;
+
+}
+
+.sorting li {
+  margin-left: 50px;
+}
+
+.catalog-section {
+  width: 700px;
+  min-height: 995px;
+  margin: 0;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.inner-page .catalog-item {
+  margin-right: 20px;
+}
+
+.inner-page .catalog-item:nth-child(3n) {
+  margin-right: 0px;
 }
