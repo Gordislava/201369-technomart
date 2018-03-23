@@ -947,35 +947,24 @@ html { box-sizing: border-box;
   width: 940px;
   margin: 0 auto;
   padding: 0 10px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.promo-menu .first-row {
-  min-height: 125px;
-  display: flex;
-  margin-bottom: 20px;
-}
 
 .color-menu {
   width: 300px;
+  min-height: 125px;
 }
 
-.first-row .color-menu:first-child {
+.color-menu:first-child {
   margin: 0;
   margin-right: 20px;
 }
 
-.first-row .color-menu:last-child {
+.color-menu:nth-child(3) {
   margin: 0;
   margin-left: auto;
-}
-
-.promo-menu .second-row {
-  min-height: 270px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  margin-bottom: 53px;
-  align-items: flex-start;
 }
 
 .slide {
@@ -983,29 +972,37 @@ html { box-sizing: border-box;
   margin-right: 20px;
   padding: 0;
   width: 620px;
-  min-height: 300px;
-  order: 3;
+  min-height: 320px;
+  margin-top: 20px;
 }
 
 .slide h2 {
   margin-top: 0;
 }
 
+.second-row {
+  display: flex;
+  flex-direction: column;
+}
+
 .second-row .color-menu:first-child {
-  order: 1;
   min-height: 125px;
+  margin: 0;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .second-row .color-menu:nth-child(2) {
-  order: 2;
   min-height: 125px;
   margin: 0;
 }
 
+/*популярные товары*/
+
  .popular-items {
    margin-bottom: 20px;
  }
+
 
  .header-popular-items {
    /*временно*/
