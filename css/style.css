@@ -1323,7 +1323,7 @@ html {
   min-height: 700px;
 }
 
-fieldset {
+.inner-page fieldset {
     display: block;
     -webkit-margin-start: 0;
     -webkit-margin-end: 0;
@@ -1381,16 +1381,12 @@ fieldset {
   margin: 0;
 }
 
-
 .catalog-list {
   width: 700px;
   min-height: 995px;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-}
-
-.catalog-list {
   padding: 0;
   list-style: none;
 }
