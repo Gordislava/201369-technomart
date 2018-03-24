@@ -1061,6 +1061,10 @@ html {
    margin-bottom: 22px;
  }
 
+ .catalog-item span:empty {
+   display: inline-block;
+ }
+
  .manufacturer-list {
    width: 940px;
    margin: 0 auto;
