@@ -21,16 +21,23 @@ img {
 
 
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
+
   width: 1px;
   height: 1px;
   margin: -1px;
-  font-size: 0;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
-
-
 
 /*header-top*/
 
@@ -82,8 +89,23 @@ img {
   color: rgba(255,255,255,0.4);
 }
 
+.header-top input {
+  margin: 0;
+  padding: 0;
+  padding-right: 130px;
+  width: 100%;
+  height: 42px;
+  padding-bottom: 5px;
+  padding-left: 48px;
+}
+
 .header-top input::placeholder {
+  display: inline-block;
+  box-sizing: border-box;
   color: #ffffff;
+  padding-top: 14px;
+  padding-bottom: 14px;
+
 }
 
 .header-top .search-form:hover {
@@ -99,6 +121,35 @@ img {
   background-color: #ffffff;
   color: #000000;
   outline: 0;
+}
+
+.search  {
+  position: relative;
+}
+
+.search .icon-search {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  top: 11px;
+  left: 18px;
+  z-index: 999;
+  opacity: 0.3;
+}
+
+.search:hover .icon-search {
+  opacity: 1;
+}
+
+.search:active path {
+  fill: #ee3643;
+}
+.search:focus path {
+  fill: #ee3643;
+}
+
+.search:focus .icon-search {
+  opacity: 1;
 }
 
 .header-top .bookmarks {
@@ -232,7 +283,7 @@ img {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
-  margin-left: 10px;
+  margin: 7px 0px 42px 10px;
 }
 
 .contacts {
@@ -249,6 +300,7 @@ img {
   padding: 11px 45px;
   padding-left: 75px;
 }
+
 
 .log-in a {
   font-size: 21px;
@@ -287,7 +339,7 @@ img {
   background-color: #ffffff;
 }
 
-.log-out::before {
+/*.log-out::before {
   content: "";
   background-image: url("../img/icon-login.svg");
   position: absolute;
@@ -298,6 +350,21 @@ img {
 
   background-repeat: no-repeat;
   background-position: 0 0;
+}*/
+
+.log-out .icon-login {
+  position: absolute;
+  top: 13px;
+  left: 83px;
+  width: 20px;
+  height: 17px;
+}
+
+.login-link:hover path {
+  fill: #32425c;
+}
+.log-out:active path {
+  fill: #c5c5c5;
 }
 
 .log-out a:hover {
@@ -312,28 +379,66 @@ img {
   font-size: 17px;
   line-height: 17px;
   background-color: #32425c;
-  border-bottom: 5px solid #293449;
+  width: 940px;
+}
+
+.main-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+}
+
+.main-menu li {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  position: relative;
+}
+
+.main-menu ul a {
+  color: #ffffff;
+  padding: 21px 30px;
 }
 
 .main-menu a:hover {
   background-color: #293449;
 }
+
 .main-menu a:active {
   background-color: #1d2739;
   color: rgba(255, 255, 255, 0.5);
 }
 
-.main-menu ul {
-  list-style: none;
+.main-menu ul::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: #293449;
+  left: 0px;
+  bottom: 0px;
 }
 
-.main-menu ul a {
-  color: #ffffff;
+.main-menu li:active::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: #1d2739;
+  left: 0px;
+  bottom: 0px;
+  z-index: 10;
 }
 
 .color-menu {
   width: 300px;
   min-height: 125px;
+
 }
 
 .color-menu p {
@@ -448,7 +553,8 @@ img {
   margin-top: 10px;
   width: 135px;
   text-transform: uppercase;
-  border-radius: 4px;
+  border-radius: 3px;
+  text-align: center;
 }
 .color-menu a:hover {
   background-color: rgba(0,0,0,0.2);
@@ -475,6 +581,61 @@ img {
   background-color: #8ed78f;
 }
 
+.promo-menu {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.second-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.second-row .color-menu:first-child {
+  min-height: 125px;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.second-row .color-menu:nth-child(2) {
+  min-height: 125px;
+  margin: 0;
+}
+
+
+.slider {
+  position: relative;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 22px;
+  height: 40px;
+  background-image: url("../img/icon-left.svg");
+  top: 135px;
+  left: 24px;
+  z-index: 99;
+  cursor: pointer;
+}
+
+.slider::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 22px;
+  height: 40px;
+  background-image: url("../img/icon-right.svg");
+  top: 135px;
+  right: 44px;
+  z-index: 99;
+  cursor: pointer;
+}
 
 .slider h2 {
   font-size: 36px;
@@ -498,9 +659,61 @@ img {
   margin-bottom: 115px;
 }
 
-.slider-points {
-    list-style: none;
+.slider-controls {
+  list-style: none;
+  position: absolute;
+  left: 294px;
+  top: 241px;
+  z-index: 10;
+  font-size: 0;
 }
+
+
+.slider-controls label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 9px;
+
+  vertical-align: top;
+
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+
+.slider-controls .active::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: #ee3643;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  border-radius: 50%;
+}
+
+.slide {
+  margin: 0;
+  margin-right: 20px;
+  padding: 0;
+  width: 620px;
+  min-height: 270px;
+  margin-top: 20px;
+  margin-bottom: 55px;
+  display: none;
+}
+
+.slide:nth-child(2) {
+  display: block;
+}
+
+/*#drills:checked ~ .slide:nth-child(1),
+#perforators:checked ~ .slide:nth-child(2) {
+  display: block;
+}*/
 
 .slide a {
   display: inline-block;
@@ -524,15 +737,18 @@ img {
 }
 
 .slide:first-child {
-  background-image: url("../img/slider-2.jpg");
+  background-image: url("../img/slide2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 .slide:nth-child(2) {
-  background-image: url("../img/slider-1.jpg");
+  background-image: url("../img/slide1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
+
 
 /*популярные товары*/
 
@@ -599,10 +815,23 @@ img {
   position:relative;
 }
 
-.catalog-item.new {
+.catalog-item.new{
+ position: relative;
+}
+
+.catalog-item.new:after {
+  content: "";
+  width: 60px;
+  height: 59px;
+  display: block;
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  right: 0;
   background-image: url("../img/new.png");
   background-repeat: no-repeat;
   background-position: right top;
+  background-size: contain;
 }
 
 .catalog-item h3 {
@@ -614,6 +843,7 @@ img {
   margin-top: 25px;
   margin-bottom: 5px;
   border: none;
+  color: #000000;
 }
 
 .catalog-item p {
@@ -627,7 +857,7 @@ img {
 }
 
 .catalog-item span,
-.catalog-item a {
+.catalog-item .price {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: :18px;
@@ -637,10 +867,9 @@ img {
 .catalog-item span{
   color: #a9a9a9;
   text-decoration: line-through;
-  cursor: pointer;
 }
 
-.catalog-item a {
+.catalog-item .price {
   display: inline-block;
   box-sizing: border-box;
   color: #ffffff;
@@ -651,7 +880,7 @@ img {
   border-radius:3px;
 }
 
-.catalog-item a::after{
+.catalog-item .price::after{
     content:"";
     position:absolute;
     top:0;
@@ -672,6 +901,7 @@ img {
   text-align: center;
 
   background-color: #ee3643;
+  cursor: pointer;
 }
 
 .item-button button:first-child {
@@ -768,6 +998,13 @@ img {
   margin: 24px;
 }
 
+.manufacturer-list li a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
 .manufacturer-list a:active {
   opacity: 0.3;
 }
@@ -783,6 +1020,35 @@ img {
 
 .manufacturer-list li:active {
   box-shadow: 0 5px 7px #abafb8;
+}
+
+.manufacturer-list {
+  width: 940px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.manufacturer-list li {
+  box-sizing: border-box;
+  width: 220px;
+  min-height: 145px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  border: 1px solid #eaeaea;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.manufacturer-list li:nth-child(4n) {
+  margin-right: 0;
+}
+
+
+
+.manufacturer-list a img {
+  align-self: center;
 }
 
 .service-section {
@@ -886,6 +1152,8 @@ img {
   margin-top: 0;
 }
 
+
+
 .about-tehnomart p {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
@@ -920,8 +1188,36 @@ img {
   font-weight: 400;
   padding-top: 5px;
   padding-bottom: 5px;
+  position: relative;
 }
 
+.about-tehnomart li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background-color: #ee3643;
+  top: 13px;
+  left: -40px;
+  z-index: 10;
+}
+
+.tehnomart-text-contacts {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+  padding-top: 50px;
+  display: flex;
+}
+
+.about-tehnomart {
+  min-height: 390px;
+  width: 540px;
+  margin: 0;
+  margin-right: 100px;
+  padding: 0;
+}
 
 
 .map a {
@@ -1348,73 +1644,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 
-.main-menu ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-}
 
-.main-menu a {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  min-height: 60px;
-  text-align: center;
-  padding: 21px 30px;
-
-}
-
-.main-menu {
-  width: 940px;
-}
-
-.main-menu .first-link {
-  padding-left: 45px;
-}
-
-.main-menu .last-link {
-  padding-right: 45px;
-}
 
 /*промо-меню*/
 
-.promo-menu {
-  width: 940px;
-  margin: 0 auto;
-  padding: 0 10px;
-  display: flex;
-  flex-wrap: wrap;
-}
 
-.slide {
-  margin: 0;
-  margin-right: 20px;
-  padding: 0;
-  width: 620px;
-  min-height: 270px;
-  margin-top: 20px;
-  margin-bottom: 55px;
-}
-
-.second-row {
-  display: flex;
-  flex-direction: column;
-}
-
-.second-row .color-menu:first-child {
-  min-height: 125px;
-  margin: 0;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.second-row .color-menu:nth-child(2) {
-  min-height: 125px;
-  margin: 0;
-}
 
  .header-manufacturer {
    min-height: 89px;
@@ -1432,33 +1666,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 
 
- .manufacturer-list {
-   width: 940px;
-   margin: 0 auto;
-   display: flex;
-   flex-wrap: wrap;
-   padding: 0;
- }
 
- .manufacturer-list li {
-   box-sizing: border-box;
-   width: 220px;
-   min-height: 145px;
-   margin-bottom: 20px;
-   margin-right: 20px;
-   border: 1px solid #eaeaea;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
- }
-
- .manufacturer-list li:nth-child(4n) {
-   margin-right: 0;
- }
-
- .manufacturer-list li a {
-   align-self: center;
- }
 
 /*сервисы*/
 .service-section-wrapper {
@@ -1537,21 +1745,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   width: 300px;
 }
 
-.tehnomart-text-contacts {
-  width: 940px;
-  margin: 0 auto;
-  padding: 0 10px;
-  padding-top: 50px;
-  display: flex;
-}
 
-.about-tehnomart {
-  min-height: 390px;
-  width: 540px;
-  margin: 0;
-  margin-right: 100px;
-  padding: 0;
-}
 
 .map {
   min-height: 390px;
