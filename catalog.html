@@ -84,20 +84,23 @@
     <div class="all-content">
       <section class="filters-section">
         <h2>Фильтр</h2>
-        <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-         <fieldset>
+        <form class="filter" action="/" method="get">
+         <fieldset class="price">
            <legend>Цена:</legend>
            <div class="price-form">
              <div class="range"></div>
+             <div class="range-progress"></div>
              <div class="circle-min"></div>
              <div class="circle-max"></div>
-           </div>
-           <input type="text" name="filter-price-min" class="filter-price-min">
-           <input type="text" name="filter-price-max" class="filter-price-max">
+          </div>
+          <div class="price-block">
+           <input type="text" name="filter-price-min" class="filter-price-min" value="0"> &ndash;
+           <input class="price-max" type="text" name="filter-price-max" class="filter-price-max" value="30000">
+          </div>
          </fieldset>
          <fieldset>
            <legend>Производители:</legend>
-           <ul>
+           <ul class="list-checkbox">
              <li class="filter-manufacturer">
               <input class="visually-hidden filter-input-checkbox" type="checkbox" name="bosch" id="filter-bosch" checked>
               <label for="filter-bosch">Bosch</label>
@@ -124,10 +127,10 @@
            <legend>Питание:</legend>
            <ul>
              <li class="filter-option">
-               <input class="visually-hidden filter-input-radio" type="radio" name="charge" value="filter-cordless">
+               <input class="visually-hidden filter-input-radio" type="radio" name="charge" value="filter-cordless" id="filter-cordless">
                <label for="filter-cordless">Аккумуляторные</label>
              <li class="filter-option">
-               <input class="visually-hidden filter-input-radio" type="radio" name="charge" value="filter-wired">
+               <input class="visually-hidden filter-input-radio" type="radio" name="charge" value="filter-wired" id="filter-wired">
                <label for="filter-wired">Сетевые</label>
              </li>
            </ul>
@@ -346,11 +349,14 @@
 
   <section class="modal modal-cart">
     <h2>Товар добавлен в корзину</h2>
-    <div class="modal-cart-bottom">
+    <div class="button-wrapper">
       <a href="cart.html">Оформить заказ</a>
       <a href="catalog.html">Продолжить покупки</a>
+
+
+      <button type="button" class="modal-close"><span class="visually-hidden">Закрыть</span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#EE3643" d="M13.273 10.5l7.422-7.422a1.003 1.003 0 0 0 0-1.414L19.336.305a1.003 1.003 0 0 0-1.414 0L10.5 7.727 3.078.305a1.003 1.003 0 0 0-1.414 0L.305 1.664a1.003 1.003 0 0 0 0 1.414L7.727 10.5.306 17.922a1.003 1.003 0 0 0 0 1.414l1.359 1.359a1.003 1.003 0 0 0 1.414 0l7.422-7.422 7.422 7.422a1.003 1.003 0 0 0 1.414 0l1.359-1.359a1.003 1.003 0 0 0 0-1.414L13.273 10.5z"/></svg>
+      </button>
     </div>
-    <button type="button" class="modal-close">Закрыть</button>
   </section>
 </body>
 </html>
