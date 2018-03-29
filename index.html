@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700%7CPT+Sans:400,700&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -15,9 +15,9 @@
             <a>Техномарт</a>
           </div>
           <div class="search">
-            <svg class="icon-search" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
-            <form class="header-search-form" action="/">
               <input class="search-form" type="search" name="search" placeholder="Поиск:">
+              <svg class="icon-search" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
+              <form class="header-search-form" action="/">
             </form>
           </div>
           <div class="bookmarks">
@@ -123,7 +123,7 @@
         <ul class="popular-list">
           <li class="catalog-item">
             <img src="img/product4.jpg" width="220" height="150" alt="Перфоратор BOSCH BFG 9000">
-            <h3>Перфоратор BOSCH BFG 9000</h3>
+            <h3><a href="product4.html">Перфоратор BOSCH BFG 9000</a></h3>
             <p>
               <span class="old-price">32500 Р</span>
             </p>
@@ -137,7 +137,7 @@
           </li>
           <li class="catalog-item">
               <img src="img/product1.jpg" width="220" height="150" alt="Перфоратор BOSCH BFG 3000">
-              <h3>Перфоратор BOSCH BFG 3000</h3>
+              <h3><a href="product1.html">Перфоратор BOSCH BFG 3000</a></h3>
               <p>
                 <span class="old-price">22500 Р</span>
               </p>
@@ -151,7 +151,7 @@
           </li>
           <li class="catalog-item">
               <img src="img/product2.jpg" width="220" height="150" alt="Перфоратор BOSCH BFG 6000">
-              <h3>Перфоратор BOSCH BFG 6000</h3>
+              <h3><a href="product2.html">Перфоратор BOSCH BFG 6000</a></h3>
               <p>
                 <span class="old-price">30500 Р</span>
               </p>
@@ -165,7 +165,7 @@
           </li>
           <li class="catalog-item new">
               <img src="img/product3.jpg" width="220" height="150" alt="Перфоратор BOSCH BFG 2000">
-              <h3>Перфоратор BOSCH BFG 2000</h3>
+              <h3><a href="product3.html">Перфоратор BOSCH BFG 2000</a></h3>
               <p>
               <span></span>
               </p>
@@ -206,24 +206,22 @@
                 <li><button type="button" name="button" class="credit-button">Кредит</button></li>
               </ul>
               <ul class="service-list-text">
-                <!--
-                <li>
 
+                <li class="service-text-item">
                   <h2>Доставка</h2>
                   <p>Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
                 </li>
 
-                <li>
+                <li class="service-text-item">
                   <h2>Гарантия</h2>
                   <p>Если купленный у нас товар поломается или заискрит,<br>а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>Дом уж восстановите как-нибудь сами.</p>
                 </li>
-                -->
-                <li>
+
+                <li class="service-text-item">
                   <h2>Кредит</h2>
                   <p>Залезть в долговую яму стало проще!<br>Кредитные консультанты придут вам на помощь.</p>
                   <button type="button" class="content-credit-button">Отправить заявку</button>
                 </li>
-
               </ul>
             </div>
           </div>
@@ -308,22 +306,24 @@
 
     <section class="modal modal-write">
       <h2 class="visually-hidden">Напишите нам</h2>
-      <form class="modal-write-form" action="https://echo.htmlacademy.ru" method="post">
-          <label>Ваше имя:
-            <input type="text" name="name" placeholder="Представьтесь, пожалуйста">
-          </label>
-        <p>
-          <label>Ваш e-mail:
-            <input type="text" name="email" placeholder="Для отправки ответа">
-          </label>
-        </p>
-        <p>
-          <label>Текст письма:
-            <textarea name="comment" rows="7" cols="30" placeholder="В свободной форме"></textarea>
-          </label>
-        </p>
-        <button class="write-form-button" type="submit">Отправить</button>
-        <button type="button" class="modal-close">Закрыть</button>
+
+        <form class="modal-write-form" action="/" method="post">
+            <p class="form-item">
+              <label for="name">Ваше имя:</label>
+                <input id="name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+            </p>
+            <p class="form-item">
+              <label for="email">Ваш e-mail:</label>
+                <input id="email" type="text" name="email" placeholder="Для отправки ответа">
+            </p>
+            <p class="form-item">
+              <label for="comment">Текст письма:</label>
+                <textarea id="comment" name="comment" rows="5" cols="65" placeholder="В свободной форме"></textarea>
+            </p>
+        <div class="button-wrapper">
+          <button class="write-form-button" type="submit">Отправить</button>
+          <button type="button" class="modal-close">Закрыть</button>
+        </div>
       </form>
     </section>
 
