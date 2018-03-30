@@ -215,7 +215,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   box-sizing: border-box;
   width: 150px;
   padding: 10px 27px;
-  padding-left: 50px;
+  padding-left: 47px;
   margin: 0;
   position: relative;
 }
@@ -248,6 +248,16 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 .header-top .cart:active {
   background-color: #161d29;
+}
+
+.header-top .cart-catalog,
+.header-top .cart-catalog:hover,
+.header-top .cart-catalog:active {
+  background-color: #ee3643;
+}
+
+.header-top .cart-catalog:active {
+  opacity: 0.6;
 }
 
 .header-top .order {
@@ -356,6 +366,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   display: flex;
   flex-wrap: wrap;
   margin-left: 50px;
+  position: relative;
 }
 
 .log-in .name-link {
@@ -373,12 +384,12 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   background-color: #ffffff;
 }
 
-.name-icon {
+.name-icon{
   position: absolute;
   width: 21px;
   height: 18px;
-  top: 14px;
-  right: 10px;
+  top: 58px;
+  right: 13px;
 }
 
 .user-icon {
@@ -390,11 +401,24 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   z-index: 10;
 }
 
+/* .log-in:hover path {
+  fill: #32425c;
+} */
+
 .name-link:hover path {
   fill: #32425c;
 }
 
-.name-link:active path {
+.name-link:active path,
+.out-link:active path {
+  fill: #c5c5c5;
+}
+
+.name-link:hover + .out-link path {
+  fill: #32425c;
+}
+
+.name-link:active + .out-link path {
   fill: #c5c5c5;
 }
 
@@ -403,9 +427,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   line-height: 21px;
 }
 
-
-
-.log-in a:hover:not(.name-link) {
+.log-in a:hover:not(.name-link),
+.log-in a:hover:not(.out-link) {
   color: #ee3643;
 }
 .log-in a:active {
@@ -891,15 +914,12 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 .header-popular-items {
-  /*временно*/
-  min-height: 89px;
   width: 940px;
   margin: 0 auto;
   background-color: #f9f5f0;
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
-
 }
 
 .header-popular-items a {
@@ -1228,7 +1248,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .service-slider ul {
   list-style: none;
 }
-
 
 .service-list-text li:first-child {
   background-image: url("../img/car-icon.png");
