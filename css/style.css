@@ -466,7 +466,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   fill: #32425c;
 }
 
-.name-link:active + .out-link path {
+.out-link:active + path {
   fill: #c5c5c5;
   color: #c5c5c5;
 }
@@ -675,6 +675,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   padding: 0;
   padding-top: 20px;
   padding-left: 23px;
+  max-width:
 }
 
 .color-menu.materials {
@@ -869,6 +870,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   margin: 0;
   padding-left: 24px;
   padding-top: 25px;
+  text-transform: uppercase;
 }
 
 .slider p {
@@ -926,7 +928,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   display: none;
 }
 
-.slide:nth-child(2) {
+.slide:nth-child(1) {
   display: block;
 }
 
@@ -1421,7 +1423,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   display: none;
 }
 
-.service-text-item:nth-child(1) {
+.service-text-item:nth-child(3) {
   display: block;
 }
 
@@ -1456,7 +1458,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   color: #32425c;
 }
 
-.content-credit-button {
+.content-credit-link {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -1468,6 +1470,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   padding-top: 10px;
   padding-bottom: 10px;
   width: 195px;
+  padding-left: 45px;
+  padding-right: 45px;
 }
 
 .tehnomart-text-contacts h2 {
@@ -1874,7 +1878,7 @@ a.mini-map {
 /*форма обратной связи*/
 
 .modal-write {
-  display: block;
+  display: none;
   position: fixed;
   width: 620px;
   height: 430px;
@@ -2201,10 +2205,14 @@ a.mini-map {
 }
 
 .breadcrumbs li:nth-of-type(1) {
+  margin-left: 0;
+}
+
+.breadcrumbs li:nth-of-type(2) {
   margin-left: 56px;
 }
 
-.breadcrumbs li::before {
+.breadcrumbs-item::before {
   content: "";
   position: absolute;
   width: 8px;
@@ -2269,7 +2277,7 @@ a.mini-map {
 }
 
 .filter legend {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 30px;
   font-weight: 700;
@@ -2279,7 +2287,7 @@ a.mini-map {
 }
 
 .filter label {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 20px;
   text-transform: uppercase;
@@ -2568,6 +2576,8 @@ a.mini-map {
   padding: 0;
   margin-left: 20px;
   margin-right: 137px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .sorting-list {
@@ -2584,6 +2594,8 @@ a.mini-map {
 
 .sorting-list li {
   margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .sorting-list li:first-child {
@@ -2664,6 +2676,7 @@ a.mini-map {
   display: flex;
   margin-top: 30px;
   margin-bottom: 60px;
+  text-transform: uppercase;
 }
 
 .pagination-list a  {
@@ -2764,7 +2777,7 @@ a.mini-map {
 }
 
 .about-item p {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   padding: 0;
