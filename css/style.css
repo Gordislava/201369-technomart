@@ -1066,6 +1066,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   margin: 0;
 }
 
+.catalog-item p:nth-of-type(2) {
+  padding-bottom: 10px;
+}
+
 .catalog-item p > span {
   display: inline-block;
   -webkit-box-sizing: border-box;
@@ -1093,10 +1097,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   vertical-align: baseline;
   color: #ffffff;
   background-image: url("../img/red-button.svg");
+  background-position: right;
   background-repeat: no-repeat;
   position: relative;
   margin-top: 9px;
-  padding: 7px 36px;
+  padding: 10px 36px;
   padding-right: 45px;
   border-radius:3px;
 }
