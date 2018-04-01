@@ -457,18 +457,13 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   fill: #32425c;
 }
 
+.out-link:hover path {
+  fill: #32425c;fill: #32425c;
+}
+
 .name-link:active path,
 .out-link:active path {
   fill: #c5c5c5;
-}
-
-.name-link:hover + .out-link path {
-  fill: #32425c;
-}
-
-.out-link:active + path {
-  fill: #c5c5c5;
-  color: #c5c5c5;
 }
 
 .log-in a {
@@ -879,9 +874,9 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   color: #ffffff;
   padding: 0;
   margin: 0;
-  margin-top: 8px;
+
   padding-left: 24px;
-  margin-bottom: 115px;
+  margin-bottom: 121px;
 }
 
 .slider-controls {
@@ -1320,7 +1315,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .service-section p {
   width: 400px;
-  margin-bottom: 11px;
+  margin-bottom: 15px;
 }
 
 .service-section p {
@@ -1423,7 +1418,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   display: none;
 }
 
-.service-text-item:nth-child(3) {
+.service-text-item:nth-child(1) {
   display: block;
 }
 
@@ -1485,8 +1480,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .about-tehnomart ul {
   list-style: none;
-  margin-bottom: 20px;
-  margin-top: 15px;
+  margin-bottom: 16px;
+  margin-top: 21px;
 }
 
 .about-tehnomart p {
@@ -1494,7 +1489,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
-  padding-top: 10px;
+  padding-top: 0;
 }
 
 .about-tehnomart p:last-of-type {
@@ -1517,7 +1512,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   padding-bottom: 10px;
   text-align: center;
   width: 220px;
-  margin-bottom: 85px;
+  margin-bottom: 86px;
   border-radius: 3px;
 }
 
@@ -1547,7 +1542,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   width: 940px;
   margin: 0 auto;
   padding: 0 10px;
-  padding-top: 50px;
+  padding-top: 55px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1584,7 +1579,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   padding-bottom: 10px;
   text-align: center;
   width: 300px;
-  margin-top: 23px;
+  margin-top: 24px;
   border-radius: 3px;
 }
 
@@ -1594,8 +1589,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   line-height: 24px;
   font-weight: 400;
   width: 190px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 28px;
+  margin-bottom: 20px;
 }
 
 a.mini-map {
@@ -1631,7 +1626,7 @@ a.mini-map {
   width: 940px;
   margin: 0 auto;
   padding: 0 10px;
-  min-height: 85px;
+  min-height: 78px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1639,7 +1634,7 @@ a.mini-map {
 
 .main-footer-logo {
   width: 220px;
-  height: 68px;
+  height: 63px;
   background-color: #ee3643;
   border-bottom: 5px solid #b52933;
   margin: 0;
@@ -1674,8 +1669,6 @@ a.mini-map {
   display: block;
   color: #ffffff;
   text-decoration: none;
-  width: 340px;
-  height: 50px;
 }
 
 .footer-middle-container {
@@ -1707,8 +1700,8 @@ a.mini-map {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 38px;
-  margin-bottom: 15px;
+  margin-top: 34px;
+  margin-bottom: 10px;
 }
 
 .footer-site-menu li {
@@ -1769,6 +1762,7 @@ a.mini-map {
   min-height: 65px;
   margin: 0;
   margin-right: auto;
+  padding-top: 5px;
 }
 
 .footer-bottom {
@@ -2757,7 +2751,7 @@ a.mini-map {
 .about-item {
   background-color: #f2f6f8;
   width: 100%;
-  min-height: 260px;
+  min-height: 258px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2771,7 +2765,7 @@ a.mini-map {
   line-height: 30px;
   font-weight: 400;
   margin: 0;
-  margin-top: 65px;
+  margin-top: 61px;
   margin-bottom: 28px;
   text-transform: uppercase;
 }
