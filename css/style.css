@@ -2200,7 +2200,7 @@ a.mini-map {
   position: relative;
 }
 
-.breadcrumbs li:first-of-type {
+.breadcrumbs li:nth-of-type(1) {
   margin-left: 56px;
 }
 
