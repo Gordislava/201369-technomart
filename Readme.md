@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Ярослава Пономарева](https://up.htmlacademy.ru/htmlcss/20/user/201369).
-* Наставник: [Евгений Соломеин] (https://htmlacademy.ru/profile/id164065).
+* Наставник: [Евгений Соломеин](https://htmlacademy.ru/profile/id164065).
 
 ---
 
