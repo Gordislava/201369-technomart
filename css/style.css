@@ -1893,7 +1893,7 @@ a.mini-map {
 /*форма обратной связи*/
 
 .modal-write {
-  display: block;
+  display: none;
   position: fixed;
   width: 620px;
   min-height: 430px;
@@ -2462,7 +2462,12 @@ a.mini-map {
   top: 0;
 }
 
-.filter-input-checkbox:hover + label::before {
+/* .filter-input-checkbox:focus + label {
+  color: #9b9a9a;
+} */
+
+.filter-input-checkbox:hover + label::before,
+.filter-input-checkbox:focus + label::before {
   content: "";
   position: absolute;
   width: 23px;
@@ -2509,6 +2514,10 @@ a.mini-map {
   top: 0;
 }
 
+.filter-input-radio:focus + label {
+  color: #9b9a9a;
+}
+
 .filter-input-radio:checked + label::after {
   content: "";
   position: absolute;
@@ -2528,7 +2537,8 @@ a.mini-map {
   opacity: 0.3;
 }
 
-.filter-input-radio:hover + label::before {
+.filter-input-radio:hover + label::before,
+.filter-input-radio:focus + label::before {
   content: "";
   position: absolute;
   width: 25px;
