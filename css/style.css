@@ -1023,14 +1023,19 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   width: 218px;
   min-height: 318px;
   margin-bottom: 19px;
-  border:1px solid #ccc;
+  border: 1px solid #ccc;
   text-align: center;
   position:relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .catalog-item.new {
  position: relative;
 }
+
 
 .catalog-item.new:after {
   content: "";
@@ -1052,7 +1057,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  margin: 22px 15px 5px 15px;
+  margin: 25px 15px 10px 15px;
   border: none;
   color: #000000;
 }
@@ -1061,13 +1066,18 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   color: #000000;
 }
 
+.actual-price h3 {
+  margin-top: 18px;
+}
+
 .catalog-item p {
   padding: 0;
   margin: 0;
 }
 
 .catalog-item p:nth-of-type(2) {
-  padding-bottom: 10px;
+  margin-bottom: 27px;
+  margin-top: 10px;
 }
 
 .catalog-item p > span {
@@ -1091,19 +1101,25 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 .catalog-item .price {
-  display: inline-block;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  vertical-align: baseline;
   color: #ffffff;
   background-image: url("../img/red-button.svg");
   background-position: right;
   background-repeat: no-repeat;
   position: relative;
-  margin-top: 9px;
+  margin-top: 0;
   padding: 10px 36px;
   padding-right: 45px;
   border-radius:3px;
+  margin-bottom: 7px;
+}
+
+.actual-price h3 {
+  margin-bottom: 0;
+}
+
+.actual-price p {
+  margin-bottom: 27px;
+  margin-top: 37px;
 }
 
 .item-link a {
