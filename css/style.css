@@ -219,7 +219,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
           box-sizing: border-box;
   width: 150px;
   padding: 12px 20px;
-  padding-left: 45px;
+  padding-left: 44px;
   margin: 0;
   margin-left: auto;
   position: relative;
@@ -259,7 +259,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
           box-sizing: border-box;
   width: 150px;
   padding: 12px 26px;
-  padding-left: 48px;
+  padding-left: 49px;
   margin: 0;
   position: relative;
 }
@@ -361,8 +361,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   font-size: 16px;
   line-height: 23px;
   font-style: italic;
-  width: 190px;
-  margin-top: 48px;
+  width: 200px;
+  margin-top: 49px;
   margin-left: 52px;
 }
 
@@ -380,7 +380,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   background-image: url("../img/icon-phone.svg");
   position: absolute;
   top: 12px;
-  left: 15px;
+  left: 13px;
   width: 19px;
   height: 19px;
   background-repeat: no-repeat;
@@ -391,15 +391,15 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
-  margin: 4px 0px 39px 11px;
+  margin: 3px 0px 39px 10px;
 }
 
 .contacts {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 270px;
-  margin-top: 44px;
-  margin-left: 76px;
+  margin-top: 45px;
+  margin-left: 68px;
 }
 
 .contacts a {
@@ -408,8 +408,9 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   display: inline-block;
   vertical-align: baseline;
   width: 270px;
-  padding: 11px 45px;
-  padding-left: 75px;
+  padding: 10px 45px;
+  padding-left: 65px;
+  padding-top: 12px;
 }
 
 .log-in {
@@ -546,7 +547,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   text-align: center;
   padding: 12px 27px;
   padding-left: 47px;
-  margin-left: 70px;
+  margin-left: 69px;
 }
 
 .login-link:hover path {
@@ -560,6 +561,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   vertical-align: baseline;
   width: 150px;
   padding: 12px 25px;
+  padding-top: 14px;
   margin-left: 5px;
 }
 
@@ -615,10 +617,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .main-menu a {
   color: #ffffff;
   padding: 21px 30px;
+  padding-left: 31px;
 }
 
 .menu-list .first-item {
-  padding-left: 23px;
+  padding-left: 21px;
 }
 
 .menu-list .last-item {
@@ -668,8 +671,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   color: #ffffff;
   margin: 0;
   padding: 0;
-  padding-top: 20px;
-  padding-left: 23px;
+  padding-top: 21px;
+  padding-left: 22px;
   max-width:
 }
 
@@ -688,7 +691,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   background-image: url("../img/icon-1.svg");
   position: absolute;
   top: 30px;
-  right: 42px;
+  right: 43px;
   width: 44px;
   height: 65px;
   background-repeat: no-repeat;
@@ -704,8 +707,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   content: "";
   background-image: url("../img/icon-2.svg");
   position: absolute;
-  top: 32px;
-  right: 30px;
+  top: 33px;
+  right: 28px;
   width: 75px;
   height: 61px;
   background-repeat: no-repeat;
@@ -723,7 +726,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   content: "";
   background-image: url("../img/icon-3.svg");
   position: absolute;
-  top: 35px;
+  top: 31px;
   right: 31px;
   width: 78px;
   height: 62px;
@@ -776,9 +779,9 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   font-size: 14px;
   line-height: 18px;
   background-color: rgba(0,0,0,0.1);
-  padding: 14px 21px;
-  margin-left: 25px;
-  margin-top: 10px;
+  padding: 10px 21px;
+  margin-left: 24px;
+  margin-top: 12px;
   width: 135px;
   text-transform: uppercase;
   border-radius: 3px;
@@ -837,8 +840,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   width: 22px;
   height: 40px;
   background-image: url("../img/icon-left.svg");
-  top: 135px;
-  left: 24px;
+  top: 134px;
+  left: 25px;
   z-index: 10;
   cursor: pointer;
 }
@@ -851,7 +854,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   height: 40px;
   background-image: url("../img/icon-right.svg");
   top: 135px;
-  right: 44px;
+  right: 40px;
   z-index: 10;
   cursor: pointer;
 }
@@ -864,7 +867,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   padding: 0;
   margin: 0;
   padding-left: 24px;
-  padding-top: 25px;
+  padding-top: 23px;
   text-transform: uppercase;
 }
 
@@ -876,23 +879,24 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   margin: 0;
 
   padding-left: 24px;
+  padding-top: 2px;
   margin-bottom: 121px;
 }
 
 .slider-controls {
   list-style: none;
   position: absolute;
-  left: 294px;
-  top: 241px;
+  left: 295px;
+  top: 240px;
   z-index: 10;
   font-size: 0;
 }
 
 .slider-controls label {
   display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin-right: 9px;
+  width: 8px;
+  height: 8px;
+  margin-right: 10px;
   vertical-align: top;
   background-color: #ffffff;
   border: 2px solid #ffffff;
@@ -907,8 +911,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   height: 6px;
   background-color: #ee3643;
   position: absolute;
-  top: 2px;
-  right: 2px;
+  top: 1px;
+  right: 1px;
   border-radius: 50%;
 }
 
@@ -937,9 +941,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   color: #ffffff;
   text-transform: uppercase;
   background-color: #ee3643;
-  padding: 10px 50px;
-  margin-left: 24px;
-  border-radius: 4px;
+  padding: 10px 49px;
+  padding-right: 46px;
+  margin-left: 25px;
+  border-radius: 3px;
 }
 
 .slide a:hover {
@@ -1057,7 +1062,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  margin: 25px 15px 10px 15px;
+  margin: 23px 15px 5px 15px;
   border: none;
   color: #000000;
 }
@@ -1107,8 +1112,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   background-repeat: no-repeat;
   position: relative;
   margin-top: 0;
-  padding: 10px 36px;
-  padding-right: 45px;
+  padding: 10px 42px;
+  padding-right: 40px;
   border-radius:3px;
   margin-bottom: 7px;
 }
@@ -1218,7 +1223,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .popular-manufacturer h2 {
@@ -1229,6 +1234,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   text-transform: uppercase;
   background-color: #f9f5f0;
   padding: 28px;
+  padding-top: 31px;
+  padding-left: 24px;
   margin: 0;
 }
 
@@ -1265,7 +1272,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .popular-manufacturer ul {
   list-style: none;
-  margin-bottom: 64px;
+  margin-bottom: 66px;
 }
 
 .manufacturer-list li:hover {
@@ -1336,7 +1343,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .service-section p {
   width: 400px;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
 }
 
 .service-section p {
@@ -1404,7 +1411,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   height: 61px;
   text-align: left;
   padding-left: 22px;
-  padding-top: 15px;
+  padding-top: 11px;
   padding-bottom: 15px;
 }
 
@@ -1450,7 +1457,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .service-list-text h2 {
   margin-top: 0;
-  padding-top: 54px;
+  padding-top: 52px;
+  margin-bottom: 25px;
 }
 
 .service-list-text p {
@@ -1497,12 +1505,14 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   color: inherit;
   text-transform: uppercase;
   background-color: inherit;
+  margin-top: 22px;
 }
 
 .about-tehnomart ul {
   list-style: none;
   margin-bottom: 16px;
   margin-top: 21px;
+  padding-left: 36px;
 }
 
 .about-tehnomart p {
@@ -1515,7 +1525,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .about-tehnomart p:last-of-type {
   width: 400px;
-  padding-top: 12px;
+  padding-top: 11px;
 }
 
 .about-tehnomart a {
@@ -1529,11 +1539,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   background-color: #ee3643;
   text-decoration: none;
   text-transform: uppercase;
-  padding-top: 10px;
+  padding-top: 12px;
   padding-bottom: 10px;
   text-align: center;
   width: 220px;
-  margin-bottom: 86px;
+  margin-bottom: 84px;
   border-radius: 3px;
 }
 
@@ -1554,8 +1564,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   width: 25px;
   height: 2px;
   background-color: #ee3643;
-  top: 9px;
-  left: -40px;
+  top: 8px;
+  left: -36px;
   z-index: 10;
 }
 
@@ -1600,7 +1610,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   padding-bottom: 10px;
   text-align: center;
   width: 300px;
-  margin-top: 24px;
+  margin-top: 26px;
   border-radius: 3px;
 }
 
@@ -1610,7 +1620,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   line-height: 24px;
   font-weight: 400;
   width: 190px;
-  margin-top: 28px;
+  margin-top: 26px;
   margin-bottom: 20px;
 }
 
@@ -1660,7 +1670,7 @@ a.mini-map {
   border-bottom: 5px solid #b52933;
   margin: 0;
   cursor: default;
-  margin-right: auto;
+  margin-right: 172px;
 }
 
 .main-footer-logo a {
@@ -1784,6 +1794,7 @@ a.mini-map {
   margin: 0;
   margin-right: auto;
   padding-top: 5px;
+  margin-left: 3px;
 }
 
 .footer-bottom {
@@ -1799,7 +1810,7 @@ a.mini-map {
   margin: 0;
   min-height: 60px;
   width: 240px;
-  margin-right: 150px;
+  margin-right: 149px;
 }
 
 .footer-bottom .social-button {
@@ -1862,11 +1873,11 @@ a.mini-map {
   min-height: 60px;
   width: 135px;
   margin-left: auto;
-  margin-right: 50px;
+  margin-right: 55px;
 }
 
 .footer-bottom {
-  font-size: 17px;
+  font-size: 16px;
   line-height: 18px;
   background-color: #293449;
 }
@@ -1887,7 +1898,7 @@ a.mini-map {
 .htmlacademy-footer-copyright {
   margin: 0;
   min-height: 60px;
-  width: 115px;
+  width: 110px;
 }
 
 /*форма обратной связи*/
@@ -2461,10 +2472,6 @@ a.mini-map {
   left: -32px;
   top: 0;
 }
-
-/* .filter-input-checkbox:focus + label {
-  color: #9b9a9a;
-} */
 
 .filter-input-checkbox:hover + label::before,
 .filter-input-checkbox:focus + label::before {
