@@ -429,7 +429,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   width: 299px;
   margin-bottom: 0;
   margin-top: 44px;
-  padding: 12px 68px 13px 45px;
+  padding: 14px 68px 13px 45px;
   text-align: center;
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -490,7 +490,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 215px;
+  width: 209px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -521,8 +521,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   width: 4px;
   background-color: #32425c;
   position: absolute;
-  top: 12px;
-  right: -20px;
+  top: 10px;
+  right: -17px;
   z-index: 10;
   border-radius: 50%;
 }
@@ -1026,8 +1026,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .catalog-item {
   width: 218px;
-  min-height: 318px;
-  margin-bottom: 19px;
+  min-height: 316px;
+  margin-bottom: 21px;
   border: 1px solid #ccc;
   text-align: center;
   position:relative;
@@ -1081,7 +1081,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 .catalog-item p:nth-of-type(2) {
-  margin-bottom: 27px;
+  margin-bottom: 25px;
   margin-top: 10px;
 }
 
@@ -1112,8 +1112,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   background-repeat: no-repeat;
   position: relative;
   margin-top: 0;
-  padding: 10px 42px;
-  padding-right: 40px;
+  padding: 10px 40px;
+  padding-right: 42px;
   border-radius:3px;
   margin-bottom: 7px;
 }
@@ -1123,7 +1123,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 .actual-price p {
-  margin-bottom: 27px;
+  margin-bottom: 25px;
   margin-top: 37px;
 }
 
@@ -1506,6 +1506,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   text-transform: uppercase;
   background-color: inherit;
   margin-top: 22px;
+  margin-bottom: 26px;
 }
 
 .about-tehnomart ul {
@@ -1539,11 +1540,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   background-color: #ee3643;
   text-decoration: none;
   text-transform: uppercase;
-  padding-top: 12px;
+  padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
   width: 220px;
-  margin-bottom: 84px;
+  margin-bottom: 86px;
   border-radius: 3px;
 }
 
@@ -2197,7 +2198,8 @@ a.mini-map {
 .breadcrumbs {
   width: 940px;
   margin: 0 auto;
-  padding-top: 18px;
+  padding-top: 15px;
+  padding-bottom: 3px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2263,7 +2265,7 @@ a.mini-map {
   margin: 0 auto;
   margin-bottom: 20px;
   padding: 0;
-  padding-left: 30px;
+  padding-left: 28px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -2296,7 +2298,7 @@ a.mini-map {
   line-height: 18px;
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
-  padding: 10px 20px;
+  padding: 9px 20px;
   margin-bottom: 10px;
 }
 
@@ -2310,7 +2312,7 @@ a.mini-map {
   line-height: 30px;
   font-weight: 700;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
   text-transform: uppercase;
 }
 
@@ -2395,7 +2397,7 @@ a.mini-map {
   width: 95px;
   padding: 10px 25px;
   text-align: center;
-  margin-bottom: 45px;
+  margin-bottom: 41px;
   background-color: #f7f3ec;
   border: none;
 }
@@ -2420,7 +2422,7 @@ a.mini-map {
   width: 220px;
   height: 1px;
   background-color: #e5e5e5;
-  bottom: 22px;
+  bottom: 16px;
   right: 0px;
 }
 
@@ -2431,7 +2433,7 @@ a.mini-map {
 }
 
 .filter .list-checkbox {
-  margin-bottom: 40px;
+  margin-bottom: 41px;
   position: relative;
 }
 
@@ -2441,14 +2443,14 @@ a.mini-map {
   width: 220px;
   height: 1px;
   background-color: #e5e5e5;
-  bottom: -20px;
-  right: -20px;
+  bottom: -24px;
+  right: -24px;
 }
 
 .filter li {
   margin: 0;
-  margin-bottom: 21px;
-  padding-left: 34px;
+  margin-bottom: 20px;
+  padding-left: 32px;
 }
 
 .filter-manufacturer label,
@@ -2578,9 +2580,10 @@ a.mini-map {
 }
 
 .filters-button {
-  margin-top: 60px;
+  margin-top: 56px;
   padding: 10px 38px;
   cursor: pointer;
+  text-transform: lowercase;
 }
 
 .sorting {
@@ -2610,7 +2613,7 @@ a.mini-map {
   padding: 0;
   margin-left: 20px;
   margin-right: 137px;
-  padding-top: 10px;
+  padding-top: 8px;
   padding-bottom: 10px;
 }
 
@@ -2628,8 +2631,8 @@ a.mini-map {
 
 .sorting-list li {
   margin: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 8px;
+  padding-bottom: 12px;
 }
 
 .sorting-list li:first-child {
@@ -2641,11 +2644,11 @@ a.mini-map {
 }
 
 .sorting-list li:nth-child(3) {
-  margin-right: 45px;
+  margin-right: 47px;
 }
 
 .sorting-list li:last-child {
-  margin-left: 20px;
+  margin-left: 22px;
 }
 
 .sorting-list a {
@@ -2693,6 +2696,7 @@ a.mini-map {
 
 .inner-page .catalog-item {
   margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .inner-page .catalog-item:nth-child(3n) {
@@ -2708,8 +2712,8 @@ a.mini-map {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 30px;
-  margin-bottom: 60px;
+  margin-top: 32px;
+  margin-bottom: 58px;
   text-transform: uppercase;
 }
 
@@ -2805,8 +2809,8 @@ a.mini-map {
   line-height: 30px;
   font-weight: 400;
   margin: 0;
-  margin-top: 61px;
-  margin-bottom: 28px;
+  margin-top: 63px;
+  margin-bottom: 26px;
   text-transform: uppercase;
 }
 
@@ -2816,5 +2820,5 @@ a.mini-map {
   line-height: 24px;
   padding: 0;
   margin: 0;
-  margin-bottom: 66px;
+  margin-bottom: 70px;
 }
