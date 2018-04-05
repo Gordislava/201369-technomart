@@ -1903,6 +1903,32 @@ a.mini-map {
   width: 110px;
 }
 
+/* карта */
+
+.modal-map {
+  display: none;
+  position: fixed;
+  width: 940px;
+  height: 447px;
+  left: 50%;
+  bottom: 350px;
+  margin-left: -470px;
+  z-index: 80;
+  box-shadow: 0px 0px 30px rgba(47, 42, 43, 0.5)
+}
+
+.map-close{
+  width: 21px;
+  height: 21px;
+  padding: 0;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  z-index: 100;
+  border: none;
+  background-color: transparent;
+}
+
 /*форма обратной связи*/
 
 .modal-write {
@@ -2085,7 +2111,6 @@ a.mini-map {
   position: absolute;
   top: 15px;
   right: 10px;
-  z-index: 30;
   border: none;
   background-color: transparent;
   z-index: 85;
@@ -2231,6 +2256,7 @@ a.mini-map {
   background-color: #ffffff;
   margin-right: 80px;
 }
+
 
 /*основные стили каталога*/
 
