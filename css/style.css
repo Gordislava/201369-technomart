@@ -2091,6 +2091,56 @@ a.mini-map {
   z-index: 85;
 }
 
+@keyframes balance {
+  0% {
+    transform: translateY(3000px);
+  }
+
+  70% {
+    transform: translateY(-40px);
+  }
+
+  90% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.modal-display {
+  display: block;
+  animation-name: balance;
+  animation-duration: 0.8s;
+}
+
+@keyframes jiggle {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateY(10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateY(-10px);
+  }
+}
+
+.modal-error {
+  animation-name: jiggle;
+  animation-duration: 0.8s;
+}
 /*корзина*/
 
 .modal-cart {
