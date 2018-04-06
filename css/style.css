@@ -1909,12 +1909,18 @@ a.mini-map {
   display: none;
   position: fixed;
   width: 940px;
-  height: 447px;
+  height: 446px;
   left: 50%;
-  bottom: 350px;
+  top: 50%;
   margin-left: -470px;
+  margin-top: -223px;
   z-index: 80;
   box-shadow: 0px 0px 30px rgba(47, 42, 43, 0.5)
+}
+
+.modal-map iframe{
+  position: fixed;
+  z-index: 80;
 }
 
 .map-close{
@@ -1924,9 +1930,17 @@ a.mini-map {
   position: absolute;
   top: 15px;
   right: 10px;
-  z-index: 100;
+  z-index: 85;
   border: none;
   background-color: transparent;
+}
+
+.map-image {
+  box-shadow: 0px 0px 30px rgba(47, 42, 43, 0.5);
+  position: absolute;
+  top: 50%
+  left: 50%;
+  z-index: 30;
 }
 
 /*форма обратной связи*/
@@ -1936,13 +1950,14 @@ a.mini-map {
   position: fixed;
   width: 620px;
   min-height: 430px;
-  top: 280px;
+  top: 50%;
   left: 50%;
   padding: 0;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.4);
           box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.4);
   margin-left: -310px;
+  margin-top: -215px;
   z-index: 80;
 }
 
@@ -1982,6 +1997,8 @@ a.mini-map {
   padding-top: 8px;
   padding-bottom: 8px;
   height: 38px;
+  padding-left: 17px;
+  padding-right: 17px;
 }
 
 .form-item textarea {
@@ -1994,6 +2011,9 @@ a.mini-map {
   width: 460px;
   min-height: 114px;
   resize: vertical;
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-top: 10px;
 
 }
 
@@ -2050,8 +2070,7 @@ a.mini-map {
   font-size: 13px;
   font-weight: 18px;
   color: #a9a9a9;
-  padding-left: 17px;
-  padding-top: 10px;
+
 }
 
 .modal-write input:-ms-input-placeholder,
@@ -2060,18 +2079,6 @@ a.mini-map {
   font-size: 13px;
   font-weight: 18px;
   color: #a9a9a9;
-  padding-left: 17px;
-  padding-top: 10px;
-}
-
-.modal-write input::-ms-input-placeholder,
-.modal-write textarea::-ms-input-placeholder {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 13px;
-  font-weight: 18px;
-  color: #a9a9a9;
-  padding-left: 17px;
-  padding-top: 10px;
 }
 
 .modal-write input::placeholder,
@@ -2080,13 +2087,12 @@ a.mini-map {
   font-size: 13px;
   font-weight: 18px;
   color: #a9a9a9;
-  padding-left: 17px;
-  padding-top: 10px;
 }
 
 .write-form-button {
   font-size: 14px;
   line-height: 18px;
+  text-transform: uppercase;
   color: #ffffff;
   background-color: #ee3643;
   border-style: none;
@@ -2191,18 +2197,6 @@ a.mini-map {
   background-color: #ee3643;
   top: 0;
   left: 0;
-}
-
-.modal-close{
-  width: 21px;
-  height: 21px;
-  padding: 0;
-  position: absolute;
-  top: 15px;
-  right: 10px;
-  z-index: 30;
-  border: none;
-  background-color: transparent;
 }
 
 .modal-cart h2 {
