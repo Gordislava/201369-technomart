@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/min.normalize.css">
+    <link rel="stylesheet" href="css/min.style.css">
   </head>
   <body>
     <header class="main-header">
@@ -81,22 +81,24 @@
             <a href="technics.html">Для стройки</a>
           </div>
           <div class="slider">
-            <div class="slide">
+            <div class="slide slide1 show">
               <h2>Дрели</h2>
               <p>Соседям на радость!</p>
               <a href="catalog.html" class="slider-button">Открыть каталог</a>
             </div>
-            <div class="slide">
+            <div class="slide slide2">
               <h2>Перфораторы</h2>
               <p>Настоящие мужские игрушки</p>
               <a href="catalog.html" class="slider-button">Открыть каталог</a>
             </div>
             <div class="slider-controls">
-              <label for="drills">Первый</label>
-              <label for="perforators" class="active">Второй</label>
+              <label for="drills" class="drills active">Первый</label>
+              <label for="perforators" class="perforators">Второй</label>
               <input class="visually-hidden" type="radio" id="drills" name="switch">
               <input class="visually-hidden" type="radio" id="perforators" name="switch" checked>
             </div>
+            <button class="slider-button-back" type="button"></button>
+            <button class="slider-button-next" type="button"></button>
           </div>
           <div class="second-row">
             <div class="color-menu discounts">
@@ -188,31 +190,31 @@
       </section>
       <section class="service-section">
         <div class="service-section-wrapper">
-          <h2>Сервисы</h2>
-          <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-            <div class="service-slider">
-              <ul class="service-list">
-                <li class="current-item"><button type="button" name="button" class="delivery-button">Доставка</button></li>
-                <li><button type="button" name="button" class="warranty-button">Гарантия</button></li>
-                <li><button type="button" name="button" class="credit-button">Кредит</button></li>
-              </ul>
+            <h2>Сервисы</h2>
+              <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+          <div class="service-slider">
+            <ul class="service-list">
+              <li class="service-delivery current-item active"><button type="button" name="button" class="delivery-button">Доставка</button></li>
+              <li class="service-warranty"><button type="button" name="button" class="warranty-button">Гарантия</button></li>
+              <li class="service-credit"><button type="button" name="button" class="credit-button">Кредит</button></li>
+            </ul>
               <ul class="service-list-text">
-                <li class="service-text-item">
-                  <h2>Доставка</h2>
+                <li class="service-text-item service-text-item-delivery active">
+                <h2>Доставка</h2>
                   <p>Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
                 </li>
-                <li class="service-text-item">
+                <li class="service-text-item service-text-item-warranty">
                   <h2>Гарантия</h2>
                   <p>Если купленный у нас товар поломается или заискрит,<br>а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>Дом уж восстановите как-нибудь сами.</p>
                 </li>
-                <li class="service-text-item">
+                <li class="service-text-item service-text-item-credit">
                   <h2>Кредит</h2>
                   <p>Залезть в долговую яму стало проще!<br>Кредитные консультанты придут вам на помощь.</p>
                   <a href="#" class="content-credit-link"> Отправить заявку</a>
                 </li>
               </ul>
-            </div>
           </div>
+        </div>
       </section>
       <section class="tehnomart-text-contacts">
         <article class="about-tehnomart">
@@ -311,7 +313,6 @@
         </div>
       </form>
     </section>
-
     <section class="modal modal-cart">
       <h2>Товар добавлен в корзину</h2>
       <div class="modal-cart-bottom">
@@ -322,11 +323,11 @@
       </button>
     </section>
     <section class="modal modal-map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.0194059818227!2d30.31209370364382!3d59.94027754679321!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sby!4v1522995657238" width="940" height="446" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.0194059818227!2d30.31209370364382!3d59.94027754679321!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sby!4v1522995657238" width="940" height="446" style="border:0" allowfullscreen></iframe>
       <img class="map-image" src="img/map-popup.png" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="940" height="446">
       <button type="button" class="modal-close map-close"><span class="visually-hidden">Закрыть</span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#EE3643" d="M13.273 10.5l7.422-7.422a1.003 1.003 0 0 0 0-1.414L19.336.305a1.003 1.003 0 0 0-1.414 0L10.5 7.727 3.078.305a1.003 1.003 0 0 0-1.414 0L.305 1.664a1.003 1.003 0 0 0 0 1.414L7.727 10.5.306 17.922a1.003 1.003 0 0 0 0 1.414l1.359 1.359a1.003 1.003 0 0 0 1.414 0l7.422-7.422 7.422 7.422a1.003 1.003 0 0 0 1.414 0l1.359-1.359a1.003 1.003 0 0 0 0-1.414L13.273 10.5z"/></svg>
       </button>
     </section>
-    <script src="js/script.js"></script>
+    <script src="js/min.script.js"></script>
   </body>
 </html>
